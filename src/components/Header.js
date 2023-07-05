@@ -1,169 +1,136 @@
+import { lime } from '@mui/material/colors';
 import React from 'react'
 
 const Header = () => {
+  // Setting the styling of the components
+  const head = `
+    lg:sticky
+    lg:top-0
+    lg:flex
+    lg:max-h-screen
+    lg:w-1/2
+    lg:flex-col
+    lg:justify-between
+    lg:py-24
+  `
+  const h1 = `
+    text-4xl
+    font-bold
+    tracking-tight
+    text-slate-200
+    sm:text-5xl
+  `
+  const h2 = `
+    mt-3
+    text-lg
+    font-medium
+    tracking-tight
+    text-slate-200
+    sm:text-xl
+  `
+  const p = `
+    mt-4
+    max-w-xs
+    leading-normal
+  `
+  const nav = `
+    nav 
+    hidden 
+    lg:block
+  `
+  const ul = `
+    mt-5
+    w-max
+    
+  `
+  const aNav = `
+    group
+    flex
+    items-center
+    py-3
+  `
+  const spanNav = `
+    nav-indicator 
+    mr-4 
+    h-px 
+    w-8 
+    bg-slate-600 
+    transition-all 
+    group-hover:w-16 
+    group-hover:bg-slate-200 
+    group-focus-visible:w-16 
+    group-focus-visible:bg-slate-200 
+    motion-reduce:transition-none
+  `
+  const spanTextNav = `
+    nav-text 
+    text-xs 
+    font-bold 
+    uppercase 
+    tracking-widest 
+    text-slate-500 
+    group-hover:text-slate-200 
+    group-focus-visible:text-slate-200
+  `
+  const ulMedia = `
+    ml-1
+    mt-8
+    flex
+    items-center
+  `
+  const liMedia = `
+    mr-5 
+    text-xs
+  `
+  const aMedia = `
+    block
+    hover:text-slate-200
+  `
+
   return (
-    <header className='
-      lg:sticky
-      lg:top-0
-      lg:flex
-      lg:max-h-screen
-      lg:w-1/2
-      lg:flex-col
-      lg:justify-between
-      lg:py-24
-    '>
+    <header className={head}>
       <div>
-        <h1 className='
-          text-4xl
-          font-bold
-          tracking-tight
-          text-slate-200
-          sm:text-5xl
-        '>
+        <h1 className={h1}>
           <a href='/'>Alan Lin</a>
         </h1>
-        <h2 className='
-          mt-3
-          text-lg
-          font-medium
-          tracking-tight
-          text-slate-200
-          sm:text-xl
-        '>
+        <h2 className={h2}>
           CS Student at Boston University
         </h2>
-        <p className='
-          mt-4
-          max-w-xs
-          leading-normal
-        '>
+        <p className={p}>
           I have a strong passion for software engineering and a strong desire to delve into the technological sector.
         </p>
 
-        <nav className='
-          nav 
-          hidden 
-          lg:block
-        ' aria-label="Navigation Menu">
-          <ul className='
-            mt-16
-            w-max
-          '>
+        <nav className={nav} aria-label="Navigation Menu">
+          <ul className={ul}>
+
             <li>
-              <a className='
-                active
-                group
-                flex
-                items-center
-                py-3
-              ' href="#about">
-                <span className='
-                  nav-indicator 
-                  mr-4 
-                  h-px 
-                  w-8 
-                  bg-slate-600 
-                  transition-all 
-                  group-hover:w-16 
-                  group-hover:bg-slate-200 
-                  group-focus-visible:w-16 
-                  group-focus-visible:bg-slate-200 
-                  motion-reduce:transition-none
-                '></span>
-                <span className='
-                  nav-text 
-                  text-xs 
-                  font-bold 
-                  uppercase 
-                  tracking-widest 
-                  text-slate-500 
-                  group-hover:text-slate-200 
-                  group-focus-visible:text-slate-200
-                '> About</span>
+              <a className={ `${aNav} active `} href="#about">
+                <span className={spanNav}></span>
+                <span className={spanTextNav}> About</span>
               </a>
             </li>
+
             <li>
-              <a className='
-                group
-                flex
-                items-center
-                py-3
-              ' href='#experience'>
-                <span className='
-                  nav-indicator 
-                  mr-4 
-                  h-px 
-                  w-8 
-                  bg-slate-600 
-                  transition-all 
-                  group-hover:w-16 
-                  group-hover:bg-slate-200 
-                  group-focus-visible:w-16 
-                  group-focus-visible:bg-slate-200 
-                  motion-reduce:transition-none
-                '></span>
-                <span className='
-                  nav-text 
-                  text-xs 
-                  font-bold 
-                  uppercase 
-                  tracking-widest 
-                  text-slate-500 
-                  group-hover:text-slate-200 
-                  group-focus-visible:text-slate-200'
-                > Experience</span>
+              <a className={aNav} href='#experience'>
+                <span className={spanNav}></span>
+                <span className={spanTextNav}> Experience</span>
               </a>
             </li>
+
             <li>
-              <a className='
-                group
-                flex
-                items-center
-                py-3
-              ' href="#projects">
-                <span className='
-                  nav-indicator 
-                  mr-4 
-                  h-px 
-                  w-8 
-                  bg-slate-600 
-                  transition-all 
-                  group-hover:w-16 
-                  group-hover:bg-slate-200 
-                  group-focus-visible:w-16 
-                  group-focus-visible:bg-slate-200 
-                  motion-reduce:transition-none
-                '></span>
-                <span className='
-                  nav-text 
-                  text-xs 
-                  font-bold 
-                  uppercase 
-                  tracking-widest 
-                  text-slate-500 
-                  group-hover:text-slate-200 
-                  group-focus-visible:text-slate-200
-                '> Projects</span>
+              <a className={aNav} href="#projects">
+                <span className={spanNav}></span>
+                <span className={spanTextNav}> Projects</span>
               </a>
             </li>
+
           </ul>
         </nav>
-        
       </div>
-      <ul className='
-        ml-1
-        mt-8
-        flex
-        items-center
-      ' aria-label='media'>
-        <li className='
-          mr-5 
-          text-xs
-        '>
-          <a className='
-            block
-            gover:text-slate-200
-          ' href='https://github.com/Alan0893' target='_blank' rel='noreferrer'>
+      
+      <ul className={ulMedia} aria-label='media'>
+        <li className={liMedia}>
+          <a className={aMedia} href='https://github.com/Alan0893' target='_blank' rel='noreferrer'>
             <span className='sr-only'>Github</span>
             <svg xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 16 16' fill='currentColor' className='h-6 w-6' aria-hidden='true'>
@@ -171,14 +138,9 @@ const Header = () => {
               </svg>
           </a>
         </li>
-        <li className='
-          mr-5 
-          text-xs
-        '>
-          <a className='
-            block
-            gover:text-slate-200
-          ' href='https://www.linkedin.com/in/alanl193/' target='_blank' rel='noreferrer'>
+
+        <li className={liMedia}>
+          <a className={aMedia} href='https://www.linkedin.com/in/alanl193/' target='_blank' rel='noreferrer'>
             <span className='sr-only'>LinkedIn</span>
             <svg xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24' fill='currentColor' className='h-6 w-6' aria-hidden='true'>
@@ -186,14 +148,18 @@ const Header = () => {
               </svg>
           </a>
         </li>
-        <li className='
-          mr-5 
-          text-xs
-        '>
-          <a className='
-            block
-            gover:text-slate-200
-          ' href='mailto:alanl07905@gmail.com' target='_blank' rel='noreferrer'>
+
+        <li className={liMedia}>
+          <a className={aMedia} href='https://devpost.com/Alan0893' target='_blank' rel='noreferrer'>
+            <span className='sr-only'>Devpost</span>
+            <svg xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24' fill='currentColor' className='h-6 w-6' aria-hidden='true'>
+                <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"/>              </svg>
+          </a>
+        </li>
+
+        <li className={liMedia}>
+          <a className={aMedia} href='mailto:alanl07905@gmail.com' target='_blank' rel='noreferrer'>
             <span className='sr-only'>Mail</span>
             <svg xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 16 16' fill='currentColor' className='h-6 w-6' aria-hidden='true'>
@@ -201,20 +167,7 @@ const Header = () => {
               </svg>
           </a>
         </li>
-        <li className='
-          mr-5 
-          text-xs
-        '>
-          <a className='
-            block
-            gover:text-slate-200
-          ' href='https://devpost.com/Alan0893' target='_blank' rel='noreferrer'>
-            <span className='sr-only'>Devpost</span>
-            <svg xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 24 24' fill='currentColor' className='h-6 w-6' aria-hidden='true'>
-                <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"/>              </svg>
-          </a>
-        </li>
+
       </ul>
     </header>
   )
