@@ -1,4 +1,3 @@
-import { lime } from '@mui/material/colors';
 import React from 'react'
 
 const Header = () => {
@@ -121,6 +120,13 @@ const Header = () => {
               <a className={aNav} href="#projects">
                 <span className={spanNav}></span>
                 <span className={spanTextNav}> Projects</span>
+              </a>
+            </li>
+
+            <li>
+              <a className={aNav} href="#contacts">
+                <span className={spanNav}></span>
+                <span className={spanTextNav}> Contacts</span>
               </a>
             </li>
 
