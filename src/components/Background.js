@@ -24,11 +24,11 @@ export const Background = ({ children }) => {
 
 	// Setting the styling of the components
 	const container = `
-		bg-slate-900
-		leading-relaxed
-		text-slate-400
-		antialiased
-		selection:bg-teal-300
+		bg-slate-900 
+		leading-relaxed 
+		text-slate-400 
+		antialiased 
+		selection:bg-teal-300 
 		selection:text-teal-900
 	`;
 	const mouse = `
@@ -51,6 +51,11 @@ export const Background = ({ children }) => {
 		lg:px-24 
 		lg:py-0
 	`
+	const child = `
+		lg:flex 
+		lg:justify-between 
+		lg:gap-4
+	`
 	
 	// Return component
   	return (
@@ -65,7 +70,9 @@ export const Background = ({ children }) => {
 					style={mouseStyle}
 				/>
 				<div className={position}>
-					{ children }
+					<div className={child}>
+						{ children }
+					</div>
 				</div>
 			</div>
 		</div>
