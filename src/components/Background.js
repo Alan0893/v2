@@ -7,9 +7,7 @@ export const Background = ({ children }) => {
 	const handleMouseMove = (event) => {
 		// Get mouse coordinates and element dimensions
 		const { clientX, clientY } = event;
-		const { left, top } = event.currentTarget.getBoundingClientRect();
-		const width = window.innerWidth;
-		const height = window.innerHeight;
+		const { left, top, width, height } = event.currentTarget.getBoundingClientRect();
 
 		// Calculate spotlight position as a percentage of element dimensions
 		const spotlightX = ((clientX - left) / width) * 100;
@@ -61,11 +59,11 @@ export const Background = ({ children }) => {
   	return (
 		<div
 			className={container}
-			style={{ minHeight: '100vh' }}
+			style={{ minHeight: 'auto' }}
 			onMouseMove={handleMouseMove}
 		>
 			<div className='relative'>
-				<div
+				<div 
 					className={mouse}
 					style={mouseStyle}
 				/>
