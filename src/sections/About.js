@@ -4,10 +4,10 @@ const About = () => {
   // Setting the styling of the components
   const p = `
     mb-10
-  `
+  `;
   const edu = `
     mb-10
-  `
+  `;
   const container = `
     group 
     relative
@@ -17,7 +17,7 @@ const About = () => {
     sm:grid-cols-8 
     sm:gap-8 
     md:gap-4 
-  `
+  `;
   const divStyle = `
     absolute 
     -inset-x-4 
@@ -26,7 +26,7 @@ const About = () => {
     rounded-md 
     lg:-inset-x-6 lg:block 
     lg:group-hover:bg-slate-800/50 
-  `
+  `;
   const time = `
     z-10 
     mb-2 
@@ -37,16 +37,16 @@ const About = () => {
     uppercase 
     text-slate-500 
     sm:col-span-2
-  `
+  `;
   const info = `
     z-10 
     sm:col-span-6
-  `
+  `;
   const h3 = `
     font-medium 
     leading-snug 
     text-slate-200
-  `
+  `;
   const h3Container = `
     group/link 
     inline-flex 
@@ -54,7 +54,7 @@ const About = () => {
     text-slate-200 
     hover:text-blue-400 
     focus-visible:text-teal-400
-  `
+  `;
   const h3Span = `
     absolute 
     -inset-x-4 
@@ -63,7 +63,7 @@ const About = () => {
     md:-inset-x-6 
     md:-inset-y-4 
     lg:block
-  `
+  `;
   const linkSvg = `
     ml-1 
     inline-block 
@@ -77,18 +77,18 @@ const About = () => {
     group-focus-visible/link:-translate-y-1 
     group-focus-visible/link:translate-x-1 
     motion-reduce:transition-none
-  `
+  `;
   const infoP = `
     mt-2 
     text-sm 
     leading-normal
-  `
+  `;
   const links = `
     group/link 
     inline-flex 
     hover:text-sky-300 
     focus-visible:text-sky-300
-  `
+  `;
 
   return (
 	  <div>
