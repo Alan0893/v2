@@ -168,7 +168,7 @@ const About = () => {
                       <img
                         className="mr-2 h-6 w-6 inline"
                         src="https://upload.wikimedia.org/wikipedia/en/3/34/FHHS_Original_Seal.png"
-                        alt="Boston University Logo"
+                        alt="FHHS Logo"
                       />
                       Forest Hills High School
                       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={linkSvg}>
