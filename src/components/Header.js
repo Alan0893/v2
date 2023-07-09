@@ -1,20 +1,38 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Header = () => {
-  const location = useLocation();
+  const [activeNav, setActiveNav] = useState('');
+  const headerRef = useRef(null);
 
-  // Determine active navigation item
-  const getActiveNavItem = (hash) => {
-    if(hash === '/') {
-      return '';
-    } else {
-      return hash.substring(1);
-    }
-  }
+  useEffect(() => {
+    // Select all the sections on the page and convert them into an array
+    const sections = Array.from(document.querySelectorAll('section'));
 
-  // Get the active navigation item based on the current location
-  const activeNav = getActiveNavItem(location.hash);
+    // Create an IntersectionObserver instance
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Check if a section is currently intersecting the viewport
+          if (entry.isIntersecting) {
+            // Set the active navigation item based on the id of the intersecting section
+            setActiveNav(entry.target.id);
+          }
+        });
+      },
+      // Set the root margin to control when a section is considered to be intersecting the viewport
+      { rootMargin: '-50% 0% -50% 0%' }
+    );
+
+    // Observe each section using the IntersectionObserver instance
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Clean up the observer when the component unmounts or when the effect is re-run
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   // Setting the styling of the components
   const head = `
@@ -106,7 +124,7 @@ const Header = () => {
   `
 
   return (
-    <header className={head}>
+    <header className={head} ref={headerRef}>
       <div>
         <h1 className={h1}>
           Alan Lin
@@ -122,29 +140,41 @@ const Header = () => {
           <ul className={navItems}>
 
             <li>
-              <a className={navItem} href="#about">
+              <a className={`${navItem} ${
+                  activeNav === 'about' ? 'active' : ''
+                }`} href="#about"
+              >
                 <span className={`${activeNav === 'about' ? activeSpan : spanNav}`} />
                 <span className={`${activeNav === 'about' ? activeSpanText : spanTextNav}`}> About</span>
               </a>
             </li>
 
             <li>
-              <a className={navItem} href='#experience'>
-              <span className={`${activeNav === 'experience' ? activeSpan : spanNav}`} />
+              <a className={`${navItem} ${
+                  activeNav === 'experience' ? 'active' : ''
+                }`} href='#experience'
+              >
+                <span className={`${activeNav === 'experience' ? activeSpan : spanNav}`} />
                 <span className={`${activeNav === 'experience' ? activeSpanText : spanTextNav}`}> Experience</span>
               </a>
             </li>
 
             <li>
-              <a className={navItem} href="#projects">
-              <span className={`${activeNav === 'projects' ? activeSpan : spanNav}`} />
+              <a className={`${navItem} ${
+                  activeNav === 'projects' ? 'active' : ''
+                }`} href="#projects"
+              >
+                <span className={`${activeNav === 'projects' ? activeSpan : spanNav}`} />
                 <span className={`${activeNav === 'projects' ? activeSpanText : spanTextNav}`}> Projects</span>
               </a>
             </li>
 
             <li>
-              <a className={navItem} href="#contacts">
-              <span className={`${activeNav === 'contacts' ? activeSpan : spanNav}`} />
+              <a className={`${navItem} ${
+                  activeNav === 'contacts' ? 'active' : ''
+                }`} href="#contacts"
+              >
+                <span className={`${activeNav === 'contacts' ? activeSpan : spanNav}`} />
                 <span className={`${activeNav === 'contacts' ? activeSpanText : spanTextNav}`}> Contacts</span>
               </a>
             </li>
