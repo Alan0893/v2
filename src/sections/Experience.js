@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About = () => {
+const Experience = () => {
   // Setting the styling of the components
   const experience = `
     mb-10
@@ -166,6 +166,9 @@ const About = () => {
                 <li className='mr-1.5 mt-2'>
                   <div className={chip}>Adaptability</div>
                 </li>
+                <li className='mr-1.5 mt-2'>
+                  <div className={chip}>Adaptability</div>
+                </li>
               </ul>
             </div>
           </div>
@@ -280,4 +283,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Experience
