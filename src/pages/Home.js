@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import About from '../sections/About';
 import Experience from '../sections/Experience';
 import Projects from '../sections/Projects';
+import Skills from '../sections/Skills';
 
 const Home = () => {
   // Setting the styling of the components
@@ -68,7 +69,13 @@ const Home = () => {
           </div>
           <Projects />
         </section>
-          
+        
+        <section id='skills' className={section}>
+          <div className={h2Wrapper}>
+            <h2 className={h2}>Skills</h2>
+          </div>
+          <Skills />
+        </section>
       </main>
     </>
   )
