@@ -5,6 +5,7 @@ import About from '../sections/About';
 import Experience from '../sections/Experience';
 import Projects from '../sections/Projects';
 import Skills from '../sections/Skills';
+import Certifications from '../sections/Certifications';
 
 const Home = () => {
   // Setting the styling of the components
@@ -68,6 +69,13 @@ const Home = () => {
             <h2 className={h2}>Skills</h2>
           </div>
           <Skills />
+        </section>
+
+        <section id='certifications' className={section}>
+          <div className={h2Wrapper}>
+            <h2 className={h2}>Certifications</h2>
+          </div>
+          <Certifications />
         </section>
       </main>
     </>
