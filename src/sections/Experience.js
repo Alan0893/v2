@@ -166,9 +166,6 @@ const Experience = () => {
                 <li className='mr-1.5 mt-2'>
                   <div className={chip}>Adaptability</div>
                 </li>
-                <li className='mr-1.5 mt-2'>
-                  <div className={chip}>Adaptability</div>
-                </li>
               </ul>
             </div>
           </div>
