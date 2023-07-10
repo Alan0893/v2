@@ -171,11 +171,11 @@ const Header = () => {
 
             <li>
               <a className={`${navItem} ${
-                  activeNav === 'contacts' ? 'active' : ''
-                }`} href="#contacts"
+                  activeNav === 'skills' ? 'active' : ''
+                }`} href="#skills"
               >
-                <span className={`${activeNav === 'contacts' ? activeSpan : spanNav}`} />
-                <span className={`${activeNav === 'contacts' ? activeSpanText : spanTextNav}`}> Contacts</span>
+                <span className={`${activeNav === 'skills' ? activeSpan : spanNav}`} />
+                <span className={`${activeNav === 'skills' ? activeSpanText : spanTextNav}`}> Skills</span>
               </a>
             </li>
 

@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header';
 import About from '../sections/About';
 import Experience from '../sections/Experience';
+import Projects from '../sections/Projects';
 
 const Home = () => {
   // Setting the styling of the components
@@ -59,6 +60,13 @@ const Home = () => {
             <h2 className={h2}>Experience</h2>
           </div>
           <Experience />
+        </section>
+
+        <section id='projects' className={section}>
+          <div className={h2Wrapper}>
+            <h2 className={h2}>Projects</h2>
+          </div>
+          <Projects />
         </section>
           
       </main>

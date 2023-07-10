@@ -53,7 +53,7 @@ const About = () => {
     font-medium 
     text-slate-200 
     hover:text-blue-400 
-    focus-visible:text-teal-400
+    focus-visible:text-blue-400
   `;
   const h3Span = `
     absolute 
