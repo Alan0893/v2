@@ -140,7 +140,7 @@ const Experience = () => {
                     <span>
                       <img
                         className="mr-2 h-6 w-6 inline"
-                        src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/188px-Starbucks_Corporation_Logo_2011.svg.png"
+                        src="https://upload.wikimedia.org/wikipedia/sco/d/d3/Starbucks_Corporation_Logo_2011.svg"
                         alt="Starbucks Logo"
                       />
                       Starbucks

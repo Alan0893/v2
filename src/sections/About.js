@@ -119,7 +119,7 @@ const About = () => {
                     <span>
                       <img
                         className="mr-2 h-6 w-6 inline"
-                        src="https://seeklogo.com/images/B/boston-university-logo-945DF309C5-seeklogo.com.png"
+                        src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Boston_University_seal.svg"
                         alt="Boston University Logo"
                       />
                       Boston University
