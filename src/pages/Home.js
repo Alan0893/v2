@@ -29,13 +29,6 @@ const Home = () => {
     backdrop-blur 
     md:-mx-12 
     md:px-12 
-    lg:relative 
-    lg:top-auto 
-    lg:mx-auto 
-    lg:w-full 
-    lg:px-0 
-    lg:py-0 
-    lg:opacity-0
   `;
   const h2 = `
     text-sm 
