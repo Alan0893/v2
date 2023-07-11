@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Gradient from './Gradient';
 
 export const Background = ({ children }) => {
 	const [mouseStyle, setMouseStyle] = useState(null);
@@ -77,20 +78,22 @@ export const Background = ({ children }) => {
 	`;
 
 	return (
-		<div 
-			className={container} 
-			style={{ minHeight: 'auto' }} 
-			onMouseMove={handleMouseMove}
-		>
-			<div className="relative">
-				<div 
-					className={mouse} 
-					style={mouseStyle} 
-				/>
-				<div className={position}>
-					<div className={child}>{children}</div>
+		<Gradient>
+			<div 
+				className={container} 
+				style={{ minHeight: 'auto' }} 
+				onMouseMove={handleMouseMove}
+			>
+				<div className="relative">
+					<div 
+						className={mouse} 
+						style={mouseStyle} 
+					/>
+					<div className={position}>
+						<div className={child}>{children}</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</Gradient>
 	);
 };
