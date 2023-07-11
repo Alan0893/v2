@@ -19,6 +19,7 @@ const Gradient = ({ children }) => {
 		fixed 
 		inset-0 
 		blur-3xl
+		pointer-events-none
 	`;
 	const svg2 = `
 		h-full 
