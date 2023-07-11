@@ -24,7 +24,6 @@ const Home = () => {
     z-20 
     -mx-6 
     mb-4 
-    bg-slate-900/75 
     px-6 
     py-5 
     backdrop-blur 
