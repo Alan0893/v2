@@ -84,37 +84,37 @@ const Skills = () => {
               <ul className={lang}>
                 <li className='mr-1.5 mt-1'> 
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="java" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/java-4.svg' alt='java' className={chipImage} />
                     <span className={chipText}>Java</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="html" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/html-1.svg' alt='html' className={chipImage} />
                     <span className={chipText}>HTML</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="css" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/css-3.svg' alt='css' className={chipImage} />
                     <span className={chipText}>CSS</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="javascript" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' alt='javascript' className={chipImage} />
                     <span className={chipText}>JavaScript</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="reactjs" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/react-2.svg' alt='reactjs' className={chipImage} />
                     <span className={chipText}>ReactJS</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="git" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/git-icon.svg' alt='git' className={chipImage} />
                     <span className={chipText}>Git</span>
                   </div>
                 </li>
@@ -133,37 +133,37 @@ const Skills = () => {
               <ul className={lang}>
               <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="python" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/python-5.svg' alt='python' className={chipImage} />
                     <span className={chipText}>Python</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://www.svgrepo.com/show/353478/bash-icon.svg" alt="bash" className={chipImage} />
+                    <img src='https://www.svgrepo.com/show/353478/bash-icon.svg' alt='bash' className={chipImage} />
                     <span className={chipText}>Bash</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://user-images.githubusercontent.com/5421823/62779159-4cf76880-baaa-11e9-8318-e20a1aaa913a.png" alt="x86 assembly" className={chipImage} />
+                    <img src='https://user-images.githubusercontent.com/5421823/62779159-4cf76880-baaa-11e9-8318-e20a1aaa913a.png' alt='x86 assembly' className={chipImage} />
                     <span className={chipText}>x86 Assembly</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/c-1.svg" alt="c" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/c-1.svg' alt='c' className={chipImage} />
                     <span className={chipText}>C</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="firebase" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/firebase-1.svg' alt='firebase' className={chipImage} />
                     <span className={chipText}>Firebase</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" className={chipImage} />
+                    <img src='https://cdn.worldvectorlogo.com/logos/arduino-1.svg' alt='arduino' className={chipImage} />
                     <span className={chipText}>Arduino</span>
                   </div>
                 </li>
@@ -182,19 +182,19 @@ const Skills = () => {
               <ul className={lang}>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://cdn.discordapp.com/attachments/880994363805696020/1126622621124014080/latex-tutorial-removebg-preview.png" alt="latex" className={chipImage} />
+                    <img src='https://cdn.discordapp.com/attachments/880994363805696020/1126622621124014080/latex-tutorial-removebg-preview.png' alt='latex' className={chipImage} />
                     <span className={chipText}>LaTeX</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://www.svgrepo.com/show/354113/nextjs-icon.svg" alt="nextjs" className={chipImage} />
+                    <img src='https://www.svgrepo.com/show/354113/nextjs-icon.svg' alt='nextjs' className={chipImage} />
                     <span className={chipText}>NextJS</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={chip}>
-                    <img src="https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=svg" alt="expressjs" className={chipImage} />
+                    <img src='https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=svg' alt='expressjs' className={chipImage} />
                     <span className={chipText}>ExpressJS</span>
                   </div>
                 </li>
