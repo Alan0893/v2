@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Projects = () => {
+const Projects23 = () => {
 	// Setting the styling of the components
 	const container = `
 		grid
@@ -348,4 +348,4 @@ const Projects = () => {
   	)
 }
 
-export default Projects
+export default Projects23
