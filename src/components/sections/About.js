@@ -20,8 +20,7 @@ const About = () => {
   `;
   const divStyle = `
     absolute 
-    -inset-x-4 
-    -inset-y-4 
+    -inset-x-4 -inset-y-4 
     z-0 hidden 
     rounded-md 
     lg:-inset-x-6 lg:block 
@@ -57,18 +56,15 @@ const About = () => {
   `;
   const h3Span = `
     absolute 
-    -inset-x-4 
-    -inset-y-2.5 
+    -inset-x-4 -inset-y-2.5 
     hidden 
-    md:-inset-x-6 
-    md:-inset-y-4 
+    md:-inset-x-6 md:-inset-y-4 
     lg:block
   `;
   const linkSvg = `
     ml-1 
     inline-block 
-    h-4 
-    w-4 
+    h-4 w-4 
     shrink-0 
     translate-y-px 
     transition-transform 
@@ -207,4 +203,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

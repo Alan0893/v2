@@ -22,9 +22,8 @@ const Gradient = ({ children }) => {
 		pointer-events-none
 	`;
 	const svg2 = `
-		h-full 
-		w-full
-	`
+		h-full w-full
+	`;
 
   	return (
 		<div className={container}>
@@ -77,4 +76,4 @@ const Gradient = ({ children }) => {
 	)
 }
 
-export default Gradient
+export default Gradient;

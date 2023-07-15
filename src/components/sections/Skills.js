@@ -17,9 +17,9 @@ const Skills = () => {
   `;
   const divStyle = `
     absolute 
-    -inset-x-4 
-    -inset-y-4 
-    z-0 hidden 
+    -inset-x-4 -inset-y-4 
+    z-0 
+    hidden 
     rounded-md 
     lg:-inset-x-6 lg:block 
     lg:group-hover:bg-slate-800/50 
@@ -60,14 +60,10 @@ const Skills = () => {
     mr-2
   `
   const chipImage = `
-    w-6
-    h-6
-    lg:w-5
-    lg:h-5
-    mt-1
-    mb-1
-    lg:mt-0
-    lg:mb-0
+    w-6 h-6
+    lg:w-5 lg:h-5
+    mt-1 mb-1
+    lg:mt-0 lg:mb-0
   `
 
   return (
@@ -208,4 +204,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills;

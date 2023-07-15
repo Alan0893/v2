@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Gradient from './Gradient';
 
-export const Background = ({ children }) => {
+const Background = ({ children }) => {
 	const [mouseStyle, setMouseStyle] = useState(null);
 	const [isMouseTrackingEnabled, setIsMouseTrackingEnabled] = useState(false);
 
@@ -66,10 +66,8 @@ export const Background = ({ children }) => {
 		max-w-screen-xl 
 		px-6 py-12 
 		font-sans 
-		md:px-12 
-		md:py-20 
-		lg:px-24 
-		lg:py-0
+		md:px-12 md:py-20 
+		lg:px-24 lg:py-0
 	`;
 	const child = `
 		lg:flex 
@@ -95,5 +93,7 @@ export const Background = ({ children }) => {
 				</div>
 			</div>
 		</Gradient>
-	);
-};
+	)
+}
+
+export default Background;

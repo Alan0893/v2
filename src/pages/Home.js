@@ -1,11 +1,11 @@
 import React from 'react'
 
 import Header from '../components/Header';
-import About from '../sections/About';
-import Experience from '../sections/Experience';
-import Projects from '../sections/Projects';
-import Skills from '../sections/Skills';
-import Certifications from '../sections/Certifications';
+import About from '../components/sections/About';
+import Experience from '../components/sections/Experience';
+import Projects from '../components/sections/Projects';
+import Skills from '../components/sections/Skills';
+import Certifications from '../components/sections/Certifications';
 
 const Home = () => {
   // Setting the styling of the components
@@ -24,8 +24,7 @@ const Home = () => {
     z-20 
     -mx-6 
     mb-4 
-    px-6 
-    py-5 
+    px-6 py-5 
     backdrop-blur 
     md:-mx-12 
     md:px-12 
@@ -46,8 +45,7 @@ const Home = () => {
     mr-1
     mb-1
 		inline-block 
-		h-4
-		w-4 
+		h-4 w-4 
 	`;
 
   return (
@@ -118,4 +116,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

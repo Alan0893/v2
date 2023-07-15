@@ -17,9 +17,9 @@ const Certifications = () => {
   `;
   const divStyle = `
     absolute 
-    -inset-x-4 
-    -inset-y-4 
-    z-0 hidden 
+    -inset-x-4 -inset-y-4 
+    z-0 
+    hidden 
     rounded-md 
     lg:-inset-x-6 lg:block 
     lg:group-hover:bg-slate-800/50 
@@ -54,18 +54,15 @@ const Certifications = () => {
   `;
   const h3Span = `
     absolute 
-    -inset-x-4 
-    -inset-y-2.5 
+    -inset-x-4 -inset-y-2.5 
     hidden 
-    md:-inset-x-6 
-    md:-inset-y-4 
+    md:-inset-x-6 md:-inset-y-4 
     lg:block
   `;
   const linkSvg = `
     ml-1 
     inline-block 
-    h-4 
-    w-4 
+    h-4 w-4 
     shrink-0 
     translate-y-px 
     transition-transform 
@@ -95,31 +92,6 @@ const Certifications = () => {
     font-medium 
     leading-5
     text-sky-300
-  `;
-  const linkWrapper = `
-    group 
-    inline-flex 
-    items-center 
-    font-medium 
-    font-semibold 
-    leading-tight 
-    text-slate-200
-  `;
-  const linkText = `
-    border-b 
-    border-transparent 
-    group-hover:border-sky-400 
-  `;
-  const arrowSvg = `
-    ml-1 
-    inline-block 
-    h-4 
-    w-4 
-    shrink-0 
-    -translate-y-px 
-    transition-transform 
-    group-hover:translate-x-2 
-    group-focus-visible:translate-x-2 
   `;
 
   return (
@@ -175,4 +147,4 @@ const Certifications = () => {
   )
 }
 
-export default Certifications
+export default Certifications;

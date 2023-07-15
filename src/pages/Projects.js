@@ -1,6 +1,8 @@
 import React from 'react'
 
-import Proj23 from '../projects/2023';
+import Projects23 from '../components/projects/2023';
+import Projects22 from '../components/projects/2022';
+import Projects21 from '../components/projects/2021';
 
 const Projects = () => {
   // Setting the styling of the components
@@ -18,8 +20,7 @@ const Projects = () => {
     z-20 
     -mx-6 
     mb-4 
-    px-6 
-    py-5 
+    px-6 py-5 
     backdrop-blur 
     md:-mx-12 
     md:px-12 
@@ -39,7 +40,21 @@ const Projects = () => {
           <div className={h2Wrapper}>
             <h2 className={h2}>2023</h2>
           </div>
-          <Proj23 />
+          <Projects23 />
+        </section>
+
+        <section id='2022' className={section}>
+          <div className={h2Wrapper}>
+            <h2 className={h2}>2022</h2>
+          </div>
+          <Projects22 />
+        </section>
+
+        <section id='2021' className={section}>
+          <div className={h2Wrapper}>
+            <h2 className={h2}>2021</h2>
+          </div>
+          <Projects21 />
         </section>
 
       </main>
@@ -47,4 +62,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

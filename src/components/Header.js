@@ -79,8 +79,7 @@ const Header = () => {
   `;
   const spanNav = `
     mr-4 
-    h-px 
-    w-8 
+    h-px w-8 
     bg-slate-700 
     transition-all 
     group-hover:w-16 
@@ -111,17 +110,16 @@ const Header = () => {
   `;
   const activeSpan = `
     mr-4 
-    h-px 
-    w-16 
+    h-px w-16 
     bg-slate-200 
-  `
+  `;
   const activeSpanText = `
     text-xs 
     font-bold 
     uppercase 
     tracking-widest 
     text-slate-200 
-  `
+  `;
 
   return (
     <header className={head} ref={headerRef}>
@@ -226,6 +224,6 @@ const Header = () => {
       </ul>
     </header>
   )
-};
+}
 
 export default Header;
