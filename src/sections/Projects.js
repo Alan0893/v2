@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
 	// Setting the styling of the components
@@ -24,7 +25,8 @@ const Projects = () => {
 		-inset-y-4 
 		z-0 hidden 
 		rounded-md 
-		lg:-inset-x-6 lg:block 
+		lg:-inset-x-6 
+		lg:block 
 		lg:group-hover:bg-slate-800/50 
 	`;
 	const info = `
@@ -298,16 +300,16 @@ const Projects = () => {
 
 			</ul>
 			<div className={item}>
-				<a className={linkWrapper} href='/projects'>
-				<span>
-					<span className='whitespace-nowrap'>
-					<span className={linkText}> View All Projects</span>
-					<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={arrowSvg}>
-						<path fillRule='evenodd' d='M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z' clipRule='evenodd'></path>
-					</svg>
+				<Link className={linkWrapper} to='/projects'>
+					<span>
+						<span className='whitespace-nowrap'>
+						<span className={linkText}> View All Projects</span>
+						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={arrowSvg}>
+							<path fillRule='evenodd' d='M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z' clipRule='evenodd'></path>
+						</svg>
+						</span>
 					</span>
-				</span>
-				</a>
+				</Link>
 			</div>
 		</div>
   	)
