@@ -1,4 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
+import {
+  HeaderContainer,
+  HeaderH1,
+  HeaderH2,
+  HeaderP,
+  Nav,
+  NavItems,
+  NavItem,
+  NavSpan,
+  NavSpanText,
+  MediaItems,
+  Media,
+  ActiveSpan,
+  ActiveSpanText
+} from '../styles/styles';
 
 const Header = () => {
   const [activeNav, setActiveNav] = useState('');
@@ -34,146 +49,59 @@ const Header = () => {
     };
   }, []);
 
-  // Setting the styling of the components
-  const head = `
-    lg:sticky
-    lg:top-0
-    lg:flex
-    lg:max-h-screen
-    lg:w-1/2
-    lg:flex-col
-    lg:justify-between
-    lg:py-24
-  `;
-  const h1 = `
-    text-4xl
-    font-bold
-    text-slate-200
-    sm:text-5xl
-  `;
-  const h2 = `
-    mt-3
-    text-lg
-    font-medium
-    text-slate-200
-    sm:text-xl
-  `;
-  const p = `
-    mt-3
-    max-w-xs
-    leading-normal
-  `;
-  const nav = `
-    hidden 
-    lg:block
-  `;
-  const navItems = `
-    mt-5
-    w-max
-  `;
-  const navItem = `
-    group
-    flex
-    items-center
-    py-3
-  `;
-  const spanNav = `
-    mr-4 
-    h-px w-8 
-    bg-slate-700 
-    transition-all 
-    group-hover:w-16 
-    group-hover:bg-slate-200 
-    group-focus-visible:w-16 
-    group-focus-visible:bg-slate-200 
-    motion-reduce:transition-none
-  `;
-  const spanTextNav = `
-    text-xs 
-    font-bold 
-    uppercase 
-    tracking-widest 
-    text-slate-500 
-    group-hover:text-slate-200 
-    group-focus-visible:text-slate-200
-  `;
-  const mediaItems = `
-    mt-8
-    flex
-    items-center
-  `;
-  const media = `
-    mr-5 
-    text-xs
-    hover:text-slate-200
-    block
-  `;
-  const activeSpan = `
-    mr-4 
-    h-px w-16 
-    bg-slate-200 
-  `;
-  const activeSpanText = `
-    text-xs 
-    font-bold 
-    uppercase 
-    tracking-widest 
-    text-slate-200 
-  `;
-
   return (
-    <header className={head} ref={headerRef}>
+    <header className={HeaderContainer} ref={headerRef}>
       <div>
-        <h1 className={h1}>
+        <h1 className={HeaderH1}>
           Alan Lin
         </h1>
-        <h2 className={h2}>
+        <h2 className={HeaderH2}>
           CS Student at Boston University
         </h2>
-        <p className={p}>
+        <p className={HeaderP}>
           I have a strong passion for software engineering and a strong desire to delve into the technological sector.
         </p>
 
-        <nav className={nav}>
-          <ul className={navItems}>
+        <nav className={Nav}>
+          <ul className={NavItems}>
 
             <li>
-              <a className={`${navItem} ${
+              <a className={`${NavItem} ${
                   activeNav === 'about' ? 'active' : ''
                 }`} href="#about"
               >
-                <span className={`${activeNav === 'about' ? activeSpan : spanNav}`} />
-                <span className={`${activeNav === 'about' ? activeSpanText : spanTextNav}`}> About</span>
+                <span className={`${activeNav === 'about' ? ActiveSpan : NavSpan}`} />
+                <span className={`${activeNav === 'about' ? ActiveSpanText : NavSpanText}`}> About</span>
               </a>
             </li>
 
             <li>
-              <a className={`${navItem} ${
+              <a className={`${NavItem} ${
                   activeNav === 'experience' ? 'active' : ''
                 }`} href='#experience'
               >
-                <span className={`${activeNav === 'experience' ? activeSpan : spanNav}`} />
-                <span className={`${activeNav === 'experience' ? activeSpanText : spanTextNav}`}> Experience</span>
+                <span className={`${activeNav === 'experience' ? ActiveSpan : NavSpan}`} />
+                <span className={`${activeNav === 'experience' ? ActiveSpanText : NavSpanText}`}> Experience</span>
               </a>
             </li>
 
             <li>
-              <a className={`${navItem} ${
+              <a className={`${NavItem} ${
                   activeNav === 'projects' ? 'active' : ''
                 }`} href="#projects"
               >
-                <span className={`${activeNav === 'projects' ? activeSpan : spanNav}`} />
-                <span className={`${activeNav === 'projects' ? activeSpanText : spanTextNav}`}> Projects</span>
+                <span className={`${activeNav === 'projects' ? ActiveSpan : NavSpan}`} />
+                <span className={`${activeNav === 'projects' ? ActiveSpanText : NavSpanText}`}> Projects</span>
               </a>
             </li>
 
             <li>
-              <a className={`${navItem} ${
+              <a className={`${NavItem} ${
                   activeNav === 'skills' ? 'active' : ''
                 }`} href="#skills"
               >
-                <span className={`${activeNav === 'skills' ? activeSpan : spanNav}`} />
-                <span className={`${activeNav === 'skills' ? activeSpanText : spanTextNav}`}> Skills</span>
+                <span className={`${activeNav === 'skills' ? ActiveSpan : NavSpan}`} />
+                <span className={`${activeNav === 'skills' ? ActiveSpanText : NavSpanText}`}> Skills</span>
               </a>
             </li>
 
@@ -181,8 +109,8 @@ const Header = () => {
         </nav>
       </div>
       
-      <ul className={mediaItems}>
-        <li className={media}>
+      <ul className={MediaItems}>
+        <li className={Media}>
           <a  href='https://github.com/Alan0893' target='_blank' rel='noreferrer'>
             <span className='sr-only'>Github</span>
             <svg xmlns='http://www.w3.org/2000/svg'
@@ -192,7 +120,7 @@ const Header = () => {
           </a>
         </li>
 
-        <li className={media}>
+        <li className={Media}>
           <a href='https://www.linkedin.com/in/alanl193/' target='_blank' rel='noreferrer'>
             <span className='sr-only'>LinkedIn</span>
             <svg xmlns='http://www.w3.org/2000/svg'
@@ -202,7 +130,7 @@ const Header = () => {
           </a>
         </li>
 
-        <li className={media}>
+        <li className={Media}>
           <a href='https://devpost.com/Alan0893' target='_blank' rel='noreferrer'>
             <span className='sr-only'>Devpost</span>
             <svg xmlns='http://www.w3.org/2000/svg'
@@ -211,7 +139,7 @@ const Header = () => {
           </a>
         </li>
 
-        <li className={media}>
+        <li className={Media}>
           <a href='mailto:alanl07905@gmail.com' target='_blank' rel='noreferrer'>
             <span className='sr-only'>Mail</span>
             <svg xmlns='http://www.w3.org/2000/svg'

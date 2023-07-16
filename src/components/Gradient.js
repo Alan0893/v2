@@ -1,34 +1,17 @@
-import React from 'react'
+import React from 'react';
+import {
+	GradientContainer,
+	GradientWrapper1,
+	GradientWrapper2,
+	GradientSvg1,
+	GradientSvg2,
+} from '../styles/styles';
 
 const Gradient = ({ children }) => {
-	// Setting the styling of the components
-	const container = `
-		isolate
-	`;
-	const wrapper1 = `
-		fixed 
-		-top-40 
-		blur-3xl
-	`;
-	const svg1 = `
-		relative 
-		h-[21.1875rem] 
-		-translate-x-1/2
-	`;
-	const wrapper2 = `
-		fixed 
-		inset-0 
-		blur-3xl
-		pointer-events-none
-	`;
-	const svg2 = `
-		h-full w-full
-	`;
-
   	return (
-		<div className={container}>
-			<div className={wrapper1}>
-				<svg className={svg1} viewBox='0 0 1155 678'>
+		<div className={GradientContainer}>
+			<div className={GradientWrapper1}>
+				<svg className={GradientSvg1} viewBox='0 0 1155 678'>
 					<path 
 						fill='url(#45de2b6b-yWtA2nK7)' 
 						fillOpacity='.4' 
@@ -51,8 +34,8 @@ const Gradient = ({ children }) => {
 
 			{ children }
 
-			<div className={wrapper2}>
-				<svg className={svg2} viewBox='0 0 1155 678'>
+			<div className={GradientWrapper2}>
+				<svg className={GradientSvg2} viewBox='0 0 1155 678'>
 					<path 
 						fill='url(#ecb5b0c9-Jx8Qf6Wp)' 
 						fillOpacity='.4'   

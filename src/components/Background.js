@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Gradient from './Gradient';
+import {
+	BackgroundContainer,
+	Mouse,
+	ChildWrapper,
+	BackgroundChild
+} from '../styles/styles';
 
 const Background = ({ children }) => {
 	const [mouseStyle, setMouseStyle] = useState(null);
@@ -44,51 +50,20 @@ const Background = ({ children }) => {
 		}
 	};
 
-	// Setting the styling of the components
-	const container = `
-		bg-slate-900 
-		leading-relaxed 
-		text-slate-400 
-		antialiased 
-		selection:bg-sky-300 
-		selection:text-sky-900
-	`;
-	const mouse = `
-		pointer-events-none 
-		fixed 
-		inset-0 
-		z-30 
-		lg:absolute
-	`;
-	const position = `
-		mx-auto 
-		min-h-screen 
-		max-w-screen-xl 
-		px-6 py-12 
-		font-sans 
-		md:px-12 md:py-20 
-		lg:px-24 lg:py-0
-	`;
-	const child = `
-		lg:flex 
-		lg:justify-between 
-		lg:gap-4
-	`;
-
 	return (
 		<Gradient>
 			<div 
-				className={container} 
+				className={BackgroundContainer} 
 				style={{ minHeight: 'auto' }} 
 				onMouseMove={handleMouseMove}
 			>
 				<div className="relative">
 					<div 
-						className={mouse} 
+						className={Mouse} 
 						style={mouseStyle} 
 					/>
-					<div className={position}>
-						<div className={child}>{children}</div>
+					<div className={ChildWrapper}>
+						<div className={BackgroundChild}>{children}</div>
 					</div>
 				</div>
 			</div>

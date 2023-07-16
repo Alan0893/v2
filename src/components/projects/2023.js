@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Projects23 = () => {
 	// Setting the styling of the components
@@ -44,15 +45,18 @@ const Projects23 = () => {
 	`;
 	const h3Span = `
 		absolute 
-		-inset-x-4 -inset-y-2.5 
+		-inset-x-4 
+		-inset-y-2.5 
 		hidden 
-		md:-inset-x-6 md:-inset-y-4 
+		md:-inset-x-6 
+		md:-inset-y-4 
 		lg:block
 	`;
 	const linkSvg = `
 		ml-1 
 		inline-block 
-		h-4 w-4 
+		h-4 
+		w-4 
 		shrink-0 
 		translate-y-px 
 		transition-transform 
@@ -344,4 +348,4 @@ const Projects23 = () => {
   	)
 }
 
-export default Projects23;
+export default Projects23
