@@ -44,7 +44,9 @@ const Projects23 = () => {
 								</a>
 							</h3>
 							<p className={InfoP}>
-								The API wrapper for the BrawlApi is designed to simplify the retrieval of specific 
+								The API wrapper for the 
+								<a className={Links} href='https://brawlapi.com/#/' target='_blank' rel='noreferrer'> BrawlApi </a> 
+								is designed to simplify the retrieval of specific 
 								game data. By utilizing JavaScript, it efficiently calls the BrawlApi, extracts the 
 								desired information from the JSON response, and returns the relevant data. This wrapper 
 								provides developers with a convenient and streamlined approach to accessing the BrawlApi 
