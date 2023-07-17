@@ -82,4 +82,4 @@ const Projects23 = () => {
   	)
 }
 
-export default Projects23
+export default Projects23;
