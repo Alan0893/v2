@@ -10,7 +10,6 @@ import {
   ChipText,
   ChipImage
 } from '../../styles/styles';
-import { Spa } from '@mui/icons-material';
 
 const Skills = () => {
   return (
