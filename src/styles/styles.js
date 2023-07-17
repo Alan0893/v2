@@ -209,7 +209,7 @@ export const Subhead = `
 	uppercase 
 	text-slate-500 
 	sm:col-span-2
-`
+`;
 export const Info = `
 	z-10
 	sm:col-span-6
@@ -298,7 +298,7 @@ export const LinkText = `
     border-transparent 
     group-hover:border-sky-400 
 `;
-export const ArrowSvg = `
+export const RightArrowSvg = `
     ml-1 
     inline-block 
     h-4 w-4 
@@ -307,6 +307,16 @@ export const ArrowSvg = `
     transition-transform 
     group-hover:translate-x-2 
     group-focus-visible:translate-x-2 
+`;
+export const LeftArrowSvg = `
+    ml-1 
+    inline-block 
+    h-4 w-4 
+    shrink-0 
+    -translate-y-px 
+    transition-transform 
+    group-hover:-translate-x-2 
+    group-focus-visible:-translate-x-2 
 `;
 export const Image = `
 	rounded 
@@ -320,7 +330,45 @@ export const Image = `
 	mt-4 
 	md:mt-0 
 	lg:mt-0
+	md:mt-0 
+	lg:mt-0
+	mb-3
 `;
 export const ProjectsContainer = `
 	group/list
+`;
+
+export const ProjContainer  = `
+	grid
+	md:grid-cols-2
+	gap-8
+`;
+export const ProjWrapper = `
+	group
+	relative
+	grid
+	pb-1
+	gap-4
+	p-5
+	rounded-lg
+`;
+export const ProjDiv = `
+	absolute 
+	inset-0
+	z-0 
+	hidden 
+	rounded-md 
+	lg:block 
+	lg:group-hover:bg-slate-800/50 
+`;
+export const Time = `
+	z-10 
+	mb-2 
+	mt-1 
+	sm:ml-3 
+	text-xs 
+	font-semibold 
+	uppercase 
+	text-slate-500 
+	sm:col-span-2
 `;

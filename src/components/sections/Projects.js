@@ -15,8 +15,8 @@ import {
 	Chip,
 	LinkWrapper,
 	LinkText,
-	ArrowSvg,
-	Links2
+	RightArrowSvg,
+	Links
 } from '../../styles/styles';
 
 const Projects = () => {
@@ -43,7 +43,7 @@ const Projects = () => {
 							</h3>
 							<p className={InfoP}>
 								Harnesses the capabilities of the 
-								<a className={Links2} href='https://www.themoviedb.org/?language=en-US' target='_blank' rel='noreferrer'> TMDB (The Movie Database) API </a>
+								<a className={Links} href='https://www.themoviedb.org/?language=en-US' target='_blank' rel='noreferrer'> TMDB (The Movie Database) API </a>
 								to deliver timely and accurate information on popular movies and series. 
 								Users can access up-to-date details, including movie/show descriptions, 
 								cast members, and character information. Utilizes the TMDB API to target 
@@ -152,9 +152,9 @@ const Projects = () => {
 							</h3>
 							<p className={InfoP}>
 								Integrated the 
-								<a className={Links2} href='https://restcountries.com/' target='_blank' rel='noreferrer'> RESTful Countries API </a>
+								<a className={Links} href='https://restcountries.com/' target='_blank' rel='noreferrer'> RESTful Countries API </a>
 								to fetch and display comprehensive data about different countries. Leveraged the 
-								<a className={Links2} href='https://developers.google.com/maps/documentation/embed/get-started' target='_blank' rel='noreferrer'> Google Maps Embed API </a>
+								<a className={Links} href='https://developers.google.com/maps/documentation/embed/get-started' target='_blank' rel='noreferrer'> Google Maps Embed API </a>
 								to showcase an interactive map of specified country. This project offers an engaging 
 								and informative user experience, allowing users to explore diverse countries and access relevant 
 								geographical details effortlessly.
@@ -194,7 +194,7 @@ const Projects = () => {
 					<span>
 						<span className='whitespace-nowrap'>
 						<span className={LinkText}> View All Projects</span>
-						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={ArrowSvg}>
+						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={RightArrowSvg}>
 							<path fillRule='evenodd' d='M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z' clipRule='evenodd' />
 						</svg>
 						</span>
