@@ -165,7 +165,7 @@ export const SectionH2 = `
 `;
 export const Links = `
 	group/link
-	text-slate-300
+	text-slate-400
 	hover:text-sky-300
 	focus-visible:text-sky-300
 `;
@@ -370,4 +370,11 @@ export const Time = `
 	uppercase 
 	text-slate-500 
 	sm:col-span-2
+`;
+export const Footer = `
+	max-w-md 
+	pb-16 
+	text-sm 
+	text-slate-500 
+	sm:pb-0
 `;
