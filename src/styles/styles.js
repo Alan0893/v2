@@ -195,7 +195,6 @@ export const DivStyles = `
 	z-0
 	hidden
 	rounded-md
-	lg:-inset-6
 	lg:block
 	lg:group-hover:bg-slate-800/50
 `;
