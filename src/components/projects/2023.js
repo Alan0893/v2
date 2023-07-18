@@ -149,7 +149,7 @@ const Projects23 = () => {
 						</div>
 						<div className={Info}>
 							<h3>
-								<a className={H3Container} href='https://alanport.netlify.app/' target='_blank' rel='noreferrer'>
+								<a className={H3Container} href='https://alanv1.netlify.app/' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
 										Portfolio V1

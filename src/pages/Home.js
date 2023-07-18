@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React,  { useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
 import {
   Home as Container,
   Section,
@@ -18,6 +18,20 @@ import Skills from '../components/sections/Skills';
 import Certifications from '../components/sections/Certifications';
 
 const Home = () => {
+  const projectsRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Check if the URL contains the query parameter 'scrollTo' with a value of 'projects'
+    const queryParams = new URLSearchParams(location.search);
+    const scrollToProjects = queryParams.get('scrollTo') === 'projects';
+
+    // If the query parameter is present and set to 'projects', scroll to the 'projects' section
+    if (scrollToProjects && projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location.search]);
+
   return (
     <>
       <Header />
@@ -37,7 +51,7 @@ const Home = () => {
           <Experience />
         </section>
 
-        <section id='projects' className={Section}>
+        <section id='projects' className={Section} ref={projectsRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Projects</h2>
           </div>

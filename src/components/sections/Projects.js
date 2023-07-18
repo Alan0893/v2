@@ -190,7 +190,7 @@ const Projects = () => {
 			</ul>
 			
 			<div className={Spacing}>
-				<Link className={LinkWrapper} to='/projects'>
+				<Link className={LinkWrapper} to='/projects' onClick={() => window.scroll(0,0)}>
 					<span>
 						<span className='whitespace-nowrap'>
 						<span className={LinkText}> View All Projects</span>
