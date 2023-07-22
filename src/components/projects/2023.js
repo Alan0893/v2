@@ -197,7 +197,7 @@ const Projects23 = () => {
 					<div className={ProjWrapper}>
 						<div className={ProjDiv} />
 						<div className={Time}>
-							June
+							January - February
 						</div>
 						<div className={Info}>
 							<h3>
