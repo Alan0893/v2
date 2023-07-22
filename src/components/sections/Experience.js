@@ -161,7 +161,7 @@ const Experience = () => {
 
       </ol>
       <div className={Spacing}>
-        <a className={LinkWrapper} href='https://alanport.netlify.app/files/resume.pdf'>
+        <a className={LinkWrapper} href='/resume.pdf'>
           <span>
             <span className='whitespace-nowrap'>
               <span className={LinkText}> View Resume</span>
