@@ -29,6 +29,14 @@ export const ChildWrapper = `
 	md:px-12 md:py-20 
 	lg:px-24 lg:py-0
 `;
+export const ChildWrapper2 = `
+	mx-auto 
+	min-h-screen 
+	max-w-screen-xl 
+	font-sans 
+	md:px-12 md:py-20 
+	lg:px-24 lg:py-0
+`;
 export const BackgroundChild = `
 	lg:flex
 	lg:justify-between

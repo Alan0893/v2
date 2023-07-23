@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Gradient from './Gradient';
 import {
 	BackgroundContainer,
 	Mouse,
 	ChildWrapper,
+	ChildWrapper2,
 	BackgroundChild
 } from '../styles/styles';
 
 const Background = ({ children }) => {
 	const [mouseStyle, setMouseStyle] = useState(null);
 	const [isMouseTrackingEnabled, setIsMouseTrackingEnabled] = useState(false);
+
+	const location = useLocation();
 
 	//  Handle side effects of React functional components
 	useEffect(() => {
@@ -50,6 +54,17 @@ const Background = ({ children }) => {
 		}
 	};
 
+	const [childStyle, setChildState] = useState(ChildWrapper);
+
+	// Handle setting the child component style 
+	useEffect(() => {
+		// If route exists then use default padding style
+		if (location.pathname === '/projects' || location.pathname === '/')
+			setChildState(ChildWrapper);
+		else // Route doesnt exist, remove padding style
+			setChildState(ChildWrapper2);
+	}, [location]);
+
 	return (
 		<Gradient>
 			<div 
@@ -62,7 +77,7 @@ const Background = ({ children }) => {
 						className={Mouse} 
 						style={mouseStyle} 
 					/>
-					<div className={ChildWrapper}>
+					<div className={childStyle}>
 						<div className={BackgroundChild}>{children}</div>
 					</div>
 				</div>
