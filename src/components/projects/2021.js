@@ -16,8 +16,6 @@ import {
 	Time
 } from '../../styles/styles';
 
-import Brawl from '../../assets/projects/brawl.svg';
-
 const Projects23 = () => {	
   	return (
 		<div>
@@ -72,7 +70,7 @@ const Projects23 = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src={Brawl}
+							src='/assets/projects/brawl.svg'
 						/>
 					</div>
 				</li>

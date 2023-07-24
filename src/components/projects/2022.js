@@ -16,9 +16,6 @@ import {
 	Time
 } from '../../styles/styles';
 
-import Stock from '../../assets/projects/stock.svg';
-import Calc from '../../assets/projects/calc.svg';
-
 const Projects22 = () => {	
   	return (
 		<div>
@@ -71,7 +68,7 @@ const Projects22 = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src={Stock}
+							src='/assets/projects/stock.svg'
 						/>
 					</div>
 				</li>
@@ -121,7 +118,7 @@ const Projects22 = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src={Calc}
+							src='/assets/projects/calc.svg'
 						/>
 					</div>
 				</li>

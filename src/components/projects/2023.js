@@ -16,11 +16,6 @@ import {
 	Time
 } from '../../styles/styles';
 
-import StreamSift from '../../assets/projects/streamsift.svg';
-import NoteCove from '../../assets/projects/notecove.svg';
-import Alanport from '../../assets/projects/alanport.svg';
-import Countrx from '../../assets/projects/countrx.svg';
-
 const Projects23 = () => {	
   	return (
 		<div>
@@ -77,7 +72,7 @@ const Projects23 = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src={StreamSift}
+							src='/assets/projects/streamsift.svg'
 						/>
 					</div>
 				</li>
@@ -136,7 +131,7 @@ const Projects23 = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src={NoteCove}
+							src='/assets/projects/notecove.svg'
 						/>
 					</div>
 				</li>
@@ -188,7 +183,7 @@ const Projects23 = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src={Alanport}
+							src='/assets/projects/alanv1.svg'
 						/>
 					</div>
 				</li>
@@ -245,7 +240,7 @@ const Projects23 = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src={Countrx}
+							src='/assets/projects/countrx.svg'
 						/>
 					</div>
 				</li>
