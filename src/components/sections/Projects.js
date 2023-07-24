@@ -72,7 +72,7 @@ const Projects = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src='https://cdn.discordapp.com/attachments/880994363805696020/1127715761390096464/streamsift.netlify.app_Nest_Hub_Max.png'
+							src='/assets/projects/streamsift.svg'
 						/>
 					</div>
 				</li>
@@ -128,7 +128,7 @@ const Projects = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src='https://cdn.discordapp.com/attachments/880994363805696020/1127774251986976769/notecove.netlify.app_Nest_Hub_Max.png'
+							src='/assets/projects/notecove.svg'
 						/>
 					</div>
 				</li>
@@ -182,7 +182,7 @@ const Projects = () => {
 							decoding='async'
 							className={Image} 
 							style={{ color: 'transparent' }} 
-							src='https://cdn.discordapp.com/attachments/880994363805696020/1127774739906183319/countrx.netlify.app_country_country.html_searchfranceNest_Hub_Max.png'
+							src='/assets/projects/countrx.svg'
 						/>
 					</div>
 				</li>

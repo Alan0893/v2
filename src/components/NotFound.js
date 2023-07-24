@@ -14,7 +14,7 @@ const NotFound = () => {
           </button>
         </Link>
         <img 
-          src='/404.png'
+          src='/assets/images/404.svg'
           alt=''
           className='h-52 mt-5'
         />
