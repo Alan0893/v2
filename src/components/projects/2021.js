@@ -32,6 +32,11 @@ const Projects23 = () => {
 								<a className={H3Container} href='https://www.npmjs.com/package/brawldata.js' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
+										<img
+											className='mr-2 h-5 w-5 inline'
+											src='/assets/projects/favicons/brawl.ico'
+											alt='favicon'
+										/>
 										Brawldata.js
 										<span className='inline-block'>
 											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>

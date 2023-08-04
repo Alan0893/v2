@@ -32,6 +32,11 @@ const Projects22 = () => {
 								<a className={H3Container} href='https://github.com/jasonw4/STOCK_PREDICTION' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
+										<img
+											className='mr-2 h-5 w-5 inline'
+											src='/assets/projects/favicons/stocks.ico'
+											alt='favicon'
+										/>
 										Dow Jones Stock Predictor
 										<span className='inline-block'>
 											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
@@ -84,6 +89,11 @@ const Projects22 = () => {
 								<a className={H3Container} href='https://alcalculator.netlify.app/' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
+										<img
+											className='mr-2 h-5 w-5 inline'
+											src='/assets/projects/favicons/calc.ico'
+											alt='favicon'
+										/>
 										Conversion Calculator
 										<span className='inline-block'>
 											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>

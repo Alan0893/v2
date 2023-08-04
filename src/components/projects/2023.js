@@ -32,6 +32,11 @@ const Projects23 = () => {
 								<a className={H3Container} href='https://streamsift.netlify.app/' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
+										<img
+											className='mr-2 h-5 w-5 inline'
+											src='/favicons/favicon.ico'
+											alt='favicon'
+										/>
 										StreamSift
 										<span className='inline-block'>
 											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
@@ -88,6 +93,11 @@ const Projects23 = () => {
 								<a className={H3Container} href='https://notecove.netlify.app/' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
+										<img
+											className='mr-2 h-5 w-5 inline'
+											src='https://notecove.netlify.app/favicon.ico'
+											alt='favicon'
+										/>
 										NoteCove
 										<span className='inline-block'>
 											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
@@ -147,6 +157,11 @@ const Projects23 = () => {
 								<a className={H3Container} href='https://alanv1.netlify.app/' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
+										<img
+											className='mr-2 h-5 w-5 inline'
+											src='/favicons/favicon.ico'
+											alt='favicon'
+										/>
 										Portfolio V1
 										<span className='inline-block'>
 											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
@@ -199,6 +214,11 @@ const Projects23 = () => {
 								<a className={H3Container} href='https://countrx.netlify.app/' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
+										<img
+											className='mr-2 h-5 w-5 inline'
+											src='/assets/projects/favicons/countrx.ico'
+											alt='favicon'
+										/>
 										Countrx
 										<span className='inline-block'>
 											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
