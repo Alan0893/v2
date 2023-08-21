@@ -48,7 +48,7 @@ export const GradientContainer = `
 export const GradientWrapper1 = `
 	fixed
 	-top-40
-	blur-3xl
+	blur-2xl
 `;
 export const GradientWrapper2 = `
 	fixed 
@@ -58,7 +58,7 @@ export const GradientWrapper2 = `
 `;
 export const GradientSvg1 = `
 	relative
-	h-[21.1875rem]
+	h-[24.1875rem]
 	-translate-x-1/2
 `;
 export const GradientSvg2 = `
