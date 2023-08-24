@@ -22,15 +22,11 @@ const Home = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Check if the URL contains the query parameter 'scrollTo' with a value of 'projects'
-    const queryParams = new URLSearchParams(location.search);
-    const scrollToProjects = queryParams.get('scrollTo') === 'projects';
-
-    // If the query parameter is present and set to 'projects', scroll to the 'projects' section
-    if (scrollToProjects && projectsRef.current) {
+    // If the hash is present and set to 'projects', scroll to the 'projects' section
+    if (window.location.hash === '#projects' && projectsRef.current) {
       projectsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [location.search]);
+  }, []);
 
   return (
     <>
