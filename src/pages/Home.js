@@ -17,6 +17,8 @@ import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
 import Certifications from '../components/sections/Certifications';
 
+import ScrollIndicator from '../components/ScrollIndicator';
+
 const Home = () => {
   const location = useLocation();
 
@@ -42,7 +44,6 @@ const Home = () => {
     }
 
     const handleScroll = () => {
-      const windowHeight = window.innerHeight;
       const scrollTop = window.scrollY;
 
       // Calculate scroll percentage for each section based on its height
@@ -77,12 +78,7 @@ const Home = () => {
         <section id='about' className={Section} ref={aboutRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>About</h2>
-            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
-              <div
-                className='h-full bg-blue-400'
-                style={{ width: `${scrollPercentages.about.toFixed(2)}%` }}
-              />
-            </div>
+            <ScrollIndicator scrollPercentages={scrollPercentages.about.toFixed(2)} />
           </div>
           <About />
         </section>
@@ -90,12 +86,7 @@ const Home = () => {
         <section id='experience' className={Section} ref={experienceRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Experience</h2>
-            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
-              <div
-                className='h-full bg-blue-400'
-                style={{ width: `${scrollPercentages.experience.toFixed(2)}%` }}
-              />
-            </div>
+            <ScrollIndicator scrollPercentages={scrollPercentages.experience.toFixed(2)} />
           </div>
           <Experience />
         </section>
@@ -103,12 +94,7 @@ const Home = () => {
         <section id='projects' className={Section} ref={projectsRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Projects</h2>
-            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
-              <div
-                className='h-full bg-blue-400'
-                style={{ width: `${scrollPercentages.projects.toFixed(2)}%` }}
-              />
-            </div>
+            <ScrollIndicator scrollPercentages={scrollPercentages.projects.toFixed(2)} />
           </div>
           <Projects />
         </section>
@@ -116,12 +102,7 @@ const Home = () => {
         <section id='skills' className={Section} ref={skillsRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Skills</h2>
-            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
-              <div
-                className='h-full bg-blue-400'
-                style={{ width: `${scrollPercentages.skills.toFixed(2)}%` }}
-              />
-            </div>
+            <ScrollIndicator scrollPercentages={scrollPercentages.skills.toFixed(2)} />
           </div>
           <Skills />
         </section>
@@ -129,12 +110,7 @@ const Home = () => {
         <section id='certifications' className={Section} ref={certRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Certifications</h2>
-            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
-              <div
-                className='h-full bg-blue-400'
-                style={{ width: `${scrollPercentages.cert.toFixed(2)}%` }}
-              />
-            </div>
+            <ScrollIndicator scrollPercentages={scrollPercentages.cert.toFixed(2)} />
           </div>
           <Certifications />
         </section>

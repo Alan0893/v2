@@ -412,3 +412,14 @@ export const Text404 = `
 	mt-4 
 	rounded-xl
 `;
+export const ScrollWrapper = `
+	relative 
+	h-1 
+	mt-1 
+	overflow-hidden 
+	rounded-3xl
+`;
+export const Scroll = `
+	h-full 
+	bg-blue-400
+`
