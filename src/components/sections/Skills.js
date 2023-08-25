@@ -134,12 +134,6 @@ const Skills = () => {
                     <span className={ChipText}>NextJS</span>
                   </div>
                 </li>
-                <li className='mr-1.5 mt-1'>
-                  <div className={Chip}>
-                    <img src='https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=svg' alt='expressjs' className={ChipImage} />
-                    <span className={ChipText}>ExpressJS</span>
-                  </div>
-                </li>
               </ul>
             </div>
           </div>
