@@ -1,5 +1,4 @@
 import React,  { useRef, useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom'
 import {
   Home as Container,
   Section,
@@ -20,8 +19,6 @@ import Certifications from '../components/sections/Certifications';
 import ScrollIndicator from '../components/ScrollIndicator';
 
 const Home = () => {
-  const location = useLocation();
-
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
