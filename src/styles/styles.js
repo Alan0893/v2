@@ -386,3 +386,29 @@ export const Footer = `
 	text-slate-500 
 	sm:pb-0
 `;
+export const Container404 = `
+	w-full 
+	h-screen 
+	flex 
+	justify-center 
+	items-center
+`;
+export const Header404 = `
+	text-4xl 
+	font-semibold
+`;
+export const Separator = `
+	border-t 
+	h-2 w-8
+	mx-auto
+	my-2
+`;
+export const Text404 = `
+	bg-blue-500 
+	hover:bg-blue-700
+	text-white 
+	font-semibold 
+	py-2 px-4 
+	mt-4 
+	rounded-xl
+`;

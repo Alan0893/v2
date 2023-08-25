@@ -1,15 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
+import {
+  Container404,
+  Header404,
+  Separator,
+  Text404
+} from '../styles/styles';
 
 const NotFound = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center">
+    <div className={Container404}>
       <div className="text-center">
-        <h1 className="text-4xl font-semibold">404</h1>
-        <div className="border-t h-2 w-8 mx-auto my-2" />
+        <h1 className={Header404}>404</h1>
+        <div className={Separator} />
         <p className="text-xl">Page Not Found</p>
         <Link to="/">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 mt-4 rounded-xl">
+          <button className={Text404}>
             Go to Home Page
           </button>
         </Link>
