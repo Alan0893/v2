@@ -1,4 +1,4 @@
-import React,  { useRef, useEffect } from 'react';
+import React,  { useRef, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom'
 import {
   Home as Container,
@@ -18,14 +18,55 @@ import Skills from '../components/sections/Skills';
 import Certifications from '../components/sections/Certifications';
 
 const Home = () => {
-  const projectsRef = useRef(null);
   const location = useLocation();
+
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const certRef = useRef(null);
+
+  // State variable to store scroll percentages for each section
+  const [scrollPercentages, setScrollPercentages] = useState({
+    about: 0,
+    experience: 0,
+    projects: 0,
+    skills: 0,
+    cert: 0,
+  }); 
 
   useEffect(() => {
     // If the hash is present and set to 'projects', scroll to the 'projects' section
     if (window.location.hash === '#projects' && projectsRef.current) {
       projectsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
+
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const scrollTop = window.scrollY;
+
+      // Calculate scroll percentage for each section based on its height
+      const aboutScrollPercentage = ((scrollTop - aboutRef.current.offsetTop) / (aboutRef.current.offsetHeight)) * 100;
+      const experienceScrollPercentage = ((scrollTop - experienceRef.current.offsetTop) / (experienceRef.current.offsetHeight)) * 100;
+      const projectsScrollPercentage = ((scrollTop - projectsRef.current.offsetTop) / (projectsRef.current.offsetHeight)) * 100;
+      const skillsScrollPercentage = ((scrollTop - skillsRef.current.offsetTop) / (skillsRef.current.offsetHeight)) * 100;
+      const certScrollPercentage = ((scrollTop - certRef.current.offsetTop) / (certRef.current.offsetHeight)) * 100;
+
+      // Update scroll percentages in state
+      setScrollPercentages({
+        about: aboutScrollPercentage,
+        experience: experienceScrollPercentage,
+        projects: projectsScrollPercentage,
+        skills: skillsScrollPercentage,
+        cert: certScrollPercentage,
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
@@ -33,16 +74,28 @@ const Home = () => {
       <Header />
       <main id='content' className={Container}>
 
-        <section id='about' className={Section}>
+        <section id='about' className={Section} ref={aboutRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>About</h2>
+            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
+              <div
+                className='h-full bg-blue-400'
+                style={{ width: `${scrollPercentages.about.toFixed(2)}%` }}
+              />
+            </div>
           </div>
           <About />
         </section>
 
-        <section id='experience' className={Section}>
+        <section id='experience' className={Section} ref={experienceRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Experience</h2>
+            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
+              <div
+                className='h-full bg-blue-400'
+                style={{ width: `${scrollPercentages.experience.toFixed(2)}%` }}
+              />
+            </div>
           </div>
           <Experience />
         </section>
@@ -50,20 +103,38 @@ const Home = () => {
         <section id='projects' className={Section} ref={projectsRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Projects</h2>
+            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
+              <div
+                className='h-full bg-blue-400'
+                style={{ width: `${scrollPercentages.projects.toFixed(2)}%` }}
+              />
+            </div>
           </div>
           <Projects />
         </section>
         
-        <section id='skills' className={Section}>
+        <section id='skills' className={Section} ref={skillsRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Skills</h2>
+            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
+              <div
+                className='h-full bg-blue-400'
+                style={{ width: `${scrollPercentages.skills.toFixed(2)}%` }}
+              />
+            </div>
           </div>
           <Skills />
         </section>
 
-        <section id='certifications' className={Section}>
+        <section id='certifications' className={Section} ref={certRef}>
           <div className={SectionHeading}>
             <h2 className={SectionH2}>Certifications</h2>
+            <div className='relative h-1 mt-1 overflow-hidden rounded-3xl'>
+              <div
+                className='h-full bg-blue-400'
+                style={{ width: `${scrollPercentages.cert.toFixed(2)}%` }}
+              />
+            </div>
           </div>
           <Certifications />
         </section>
