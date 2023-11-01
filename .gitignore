@@ -26,3 +26,6 @@ yarn-error.log*
 info.json
 # Local Netlify folder
 .netlify
+
+# Utilities
+utility

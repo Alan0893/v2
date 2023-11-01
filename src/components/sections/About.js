@@ -61,7 +61,13 @@ const About = () => {
               </p>
               <ul className='list-disc ml-4'>
                 <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-210/' target='_blank' rel='noreferrer'>CS 210 (Computer Systems & Architecture)</a>
+                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-320/' target='_blank' rel='noreferrer'>CS 320 (Concepts of Programming Languages)</a>
+                </li>
+                <li>
+                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-237/' target='_blank' rel='noreferrer'>CS 237 (Probability in Computing)</a>
+                </li>
+                <li>
+                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-210/' target='_blank' rel='noreferrer'>CS 210 (Computer Systems)</a>
                 </li>
                 <li>
                   <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-132/' target='_blank' rel='noreferrer'>CS 132 (Geometric Algorithms / Linear Algebra)</a>
@@ -70,7 +76,7 @@ const About = () => {
                   <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-131/' target='_blank' rel='noreferrer'>CS 131 (Combinatoric Structures / Discrete Mathematics)</a>
                 </li>
                 <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-112/' target='_blank' rel='noreferrer'>CS 112 (Data Structures & Algorithms)</a>
+                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-112/' target='_blank' rel='noreferrer'>CS 112 (Data Structures & OOP in Java)</a>
                 </li>
               </ul>
             </div>
