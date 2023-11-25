@@ -21,12 +21,58 @@ const Experience = () => {
   return (
 	  <div>
       <ol>
+        <li className={Spacing}>
+          <div className={Container}>
+            <div className={`border border-sky-900 ${DivStyles}`} />
+            <header className={Subhead}>
+              Nov 2022
+            </header>
+            <div className={Info}>
+              <h3 className={SectionH3}>
+                <div>
+                  <a className={H3Container} href='https://bostonhacks.org/' target='_blank' rel='noreferrer'>
+                    <span className={H3Span} />
+                    <span>
+                      <img
+                        className='mr-2 h-6 w-6 inline'
+                        src='https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg'
+                        alt='BostonHacks Logo'
+                      />
+                      BostonHacks Hackathon
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
+                        <path fillRule='evenodd' d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z' clipRule='evenodd' />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div className='text-slate-500'>Developer</div>
+              </h3>
+              <p className={InfoP}>
+                Worked alongside a partner with a focus on Dow Jones companies for stock prediction.
+                Leveraged yfinance library to retrieve account historical stock data for analysis.
+                Incorporated Plotly for interative data visualization, enhancing user experience. 
+                Analyzed historical trends and generated insightful predictions to support decision-making in the stock market.
+              </p>
+              <ul className={ChipWrapper}>
+                <li className='mr-1.5 mt-2'>
+                  <div className={Chip}>Teamwork</div>
+                </li>
+                <li className='mr-1.5 mt-2'>
+                  <div className={Chip}>Problem-Solving</div>
+                </li>
+                <li className='mr-1.5 mt-2'>
+                  <div className={Chip}>Python</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
 
         <li className={Spacing}>
           <div className={Container}>
             <div className={DivStyles} />
             <header className={Subhead}>
-              Sept 2022 - May 2023
+              Sept 2022 - Current
             </header>
             <div className={Info}>
               <h3 className={SectionH3}>
@@ -61,52 +107,6 @@ const Experience = () => {
                 </li>
                 <li className='mr-1.5 mt-2'>
                   <div className={Chip}>Adaptability</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li className={Spacing}>
-          <div className={Container}>
-            <div className={DivStyles} />
-            <header className={Subhead}>
-              July 2022 - Aug 2022
-            </header>
-            <div className={Info}>
-              <h3 className={SectionH3}>
-                <div>
-                  <a className={H3Container} href='https://www.partycity.com/' target='_blank' rel='noreferrer'>
-                    <span className={H3Span} />
-                    <span>
-                      <img
-                        className='mr-2 h-6 w-6 inline'
-                        src='https://cdn.discordapp.com/attachments/880994363805696020/1127686787779809360/unnamed-removebg-preview.png'
-                        alt='Party City Logo'
-                      />
-                      Party City
-                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
-                        <path fillRule='evenodd' d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z' clipRule='evenodd' />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div className='text-slate-500'>Sales Associate</div>
-              </h3>
-              <p className={InfoP}>
-                Assisted customers with product inquiries, provided recommendations, and ensuring needs were met.
-                Proficient in operating cash registers, handling transactions accurately, and maintaining a tidy 
-                store environment. Collaborative team player with excellent communication skills. 
-              </p>
-              <ul className={ChipWrapper}>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Customer Service</div>
-                </li>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Inventory Management</div>
-                </li>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Visual Merchandising</div>
                 </li>
               </ul>
             </div>

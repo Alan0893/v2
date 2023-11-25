@@ -73,7 +73,7 @@ const About = () => {
                   <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-132/' target='_blank' rel='noreferrer'>CS 132 (Geometric Algorithms / Linear Algebra)</a>
                 </li>
                 <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-131/' target='_blank' rel='noreferrer'>CS 131 (Combinatoric Structures / Discrete Mathematics)</a>
+                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-131/' target='_blank' rel='noreferrer'>CS 131 (Combinatoric Structures / Discrete Math)</a>
                 </li>
                 <li>
                   <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-112/' target='_blank' rel='noreferrer'>CS 112 (Data Structures & OOP in Java)</a>
