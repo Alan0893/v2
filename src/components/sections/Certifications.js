@@ -33,7 +33,7 @@ const Certifications = () => {
                     <span>
                       <img
                         className='mr-2 h-6 w-6 inline'
-                        src='https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'
+                        src='https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg'
                         alt='Google'
                       />
                       Fundamentals of Digital Marketing
@@ -43,7 +43,7 @@ const Certifications = () => {
                     </span>
                   </a>
                 </div>
-                <div className='text-slate-500'>Google Digital Garage</div>
+                <div className='text-slate-500'>Google Digital Garage (Discontinued)</div>
               </h3>
               <p className={InfoP}>
                 <b>Credential ID:</b> WZW TM2 Q94

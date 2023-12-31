@@ -93,12 +93,6 @@ const Skills = () => {
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={Chip}>
-                    <img src='https://cdn.worldvectorlogo.com/logos/c-1.svg' alt='c' className={ChipImage} />
-                    <span className={ChipText}>C</span>
-                  </div>
-                </li>
-                <li className='mr-1.5 mt-1'>
-                  <div className={Chip}>
                     <img src='https://cdn.worldvectorlogo.com/logos/firebase-1.svg' alt='firebase' className={ChipImage} />
                     <span className={ChipText}>Firebase</span>
                   </div>
@@ -107,6 +101,12 @@ const Skills = () => {
                   <div className={Chip}>
                     <img src='https://cdn.worldvectorlogo.com/logos/arduino-1.svg' alt='arduino' className={ChipImage} />
                     <span className={ChipText}>Arduino</span>
+                  </div>
+                </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://cdn.discordapp.com/attachments/880994363805696020/1126622621124014080/latex-tutorial-removebg-preview.png' alt='latex' className={ChipImage} />
+                    <span className={ChipText}>LaTeX</span>
                   </div>
                 </li>
               </ul>
@@ -122,18 +122,14 @@ const Skills = () => {
             </header>
             <div className={Info}>
               <ul className={ChipWrapper}>
-                <li className='mr-1.5 mt-1'>
-                  <div className={Chip}>
-                    <img src='https://cdn.discordapp.com/attachments/880994363805696020/1126622621124014080/latex-tutorial-removebg-preview.png' alt='latex' className={ChipImage} />
-                    <span className={ChipText}>LaTeX</span>
-                  </div>
-                </li>
+                
                 <li className='mr-1.5 mt-1'>
                   <div className={Chip}>
                     <img src='https://www.svgrepo.com/show/354113/nextjs-icon.svg' alt='nextjs' className={ChipImage} />
                     <span className={ChipText}>NextJS</span>
                   </div>
                 </li>
+                
               </ul>
             </div>
           </div>

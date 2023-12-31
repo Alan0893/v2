@@ -160,6 +160,7 @@ const Experience = () => {
         </li>
 
       </ol>
+      
       <div className={Spacing}>
         <a className={LinkWrapper} href='/resume.pdf'>
           <span>
