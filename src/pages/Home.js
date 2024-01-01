@@ -77,7 +77,7 @@ const Home = () => {
             <h2 className={SectionH2}>About</h2>
             <ScrollIndicator scrollPercentages={scrollPercentages.about.toFixed(2)} />
           </div>
-          <About />
+          <About/>
         </section>
 
         <section id='experience' className={Section} ref={experienceRef}>

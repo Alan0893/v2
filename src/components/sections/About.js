@@ -1,17 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
-    Spacing,
-    Container,
-    DivStyles,
-    Subhead,
-    Info,
-    SectionH3,
-    H3Container,
-    H3Span,
-    LinkSvg,
-    InfoP,
-    Links2,
-
+  Spacing,
+  Container,
+  DivStyles,
+  Subhead,
+  Info,
+  SectionH3,
+  H3Container,
+  H3Span,
+  LinkSvg,
+  InfoP,
+  Links2,
+  LinkWrapper,
+  LinkText,
+  RightArrowSvg
 } from '../../styles/styles';
 
 const About = () => {
@@ -57,28 +60,34 @@ const About = () => {
                 <div className='text-slate-500'>Bachelor of Arts - BA, Computer Science</div>
               </h3>
               <p className={InfoP}>
-                <b>Relevant Courses: </b> 
+                <b>Grade: </b> Sophomore <br />
               </p>
-              <ul className='list-disc ml-4'>
-                <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-320/' target='_blank' rel='noreferrer'>CS 320 (Concepts of Programming Languages)</a>
-                </li>
-                <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-237/' target='_blank' rel='noreferrer'>CS 237 (Probability in Computing)</a>
-                </li>
-                <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-210/' target='_blank' rel='noreferrer'>CS 210 (Computer Systems)</a>
-                </li>
-                <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-132/' target='_blank' rel='noreferrer'>CS 132 (Geometric Algorithms / Linear Algebra)</a>
-                </li>
-                <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-131/' target='_blank' rel='noreferrer'>CS 131 (Combinatoric Structures / Discrete Math)</a>
-                </li>
-                <li>
-                  <a className={Links2} href='https://www.bu.edu/academics/cas/courses/cas-cs-112/' target='_blank' rel='noreferrer'>CS 112 (Data Structures & OOP in Java)</a>
-                </li>
-              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li id='courses' className={Spacing}>
+          <div className={Container}>
+            <div className={DivStyles} />
+            <header className={Subhead} />
+            <div className={Info}>
+              <h3 className={SectionH3}>
+                <div>
+                  <a className={H3Container} href='/courses' rel='noreferrer' onClick={() => window.scroll(0,0)}>
+                    <span className={H3Span} />
+                    <Link className={LinkWrapper} to='/courses' onClick={() => window.scroll(0,0)}>
+                      <span>
+                        <span className='whitespace-nowrap'>
+                          <span className={LinkText}> View Relevant Courses</span>
+                          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={RightArrowSvg}>
+                            <path fillRule='evenodd' d='M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z' clipRule='evenodd' />
+                          </svg>
+                        </span>
+                      </span>
+                    </Link>
+                  </a>
+                </div>
+              </h3>
             </div>
           </div>
         </li>
@@ -110,7 +119,7 @@ const About = () => {
                 <div className='text-slate-500'>High School Diploma, Carl Sagan Honors Program (STEM)</div>
               </h3>
               <p className={InfoP}>
-                <b>Grade: </b> 102.95 <br />
+                <b>GPA: </b> 102.95 <br />
                 <b>Activities: </b> Cross Country Team, Indoor Track & Field Team <br />
                 <b>Diploma: </b> Regents Advanced Designation with Honor, Regents Designation with Mastery in Science, Regents Advanced Designation with Mastery in Math <br />
                 <b>Awards:</b> 
