@@ -60,7 +60,7 @@ const Sophomore = () => {
 								<a className={H3Container} href='https://bu.edu/cs/undergraduate/undergraduate-life/courses/topics/' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
-										CS 391 S1 - Spark! Software Engineering Immersion
+										CS 391 A1 - Web Application Development
 										<span className='inline-block'>
 											<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
 												<path fillRule='evenodd' d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z' clipRule='evenodd' />
@@ -70,7 +70,7 @@ const Sophomore = () => {
 								</a>
 							</h3>
 							<p className={InfoP}>
-								This course is intentionally taught with very little prerequisite knowledge to enable students to begin learning these skills earlier in their college path. Students begin by learning basic skills required to build a functioning web application. During the second half of the course, students will be allocated to teams and assigned a project to work on over the course of the semester.
+							Web Application Development is a comprehensive course that equips students with practical skills to build dynamic and immersive web applications. Through hands-on exercises and projects, students learn to structure and style web pages using HTML and CSS, create interactive experiences with JavaScript, develop reusable components with React, interact with relational databases using decoupling tools such as ORM and DAO. Additionally, students explore the exciting world of Web-XR, enabling them to build virtual reality experiences with React-VR. By the end of the course, students have the necessary tools and knowledge to develop robust web applications with seamless integration of databases, interactive functionality, and immersive VR experiences. Students are expected to have basic knowledge of OOP principles, coding conventions, and I/O subsystems. 
 							</p>
 							
 						</div>

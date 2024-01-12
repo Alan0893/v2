@@ -11,7 +11,6 @@ import {
   H3Span,
   LinkSvg,
   InfoP,
-  Links2,
   LinkWrapper,
   LinkText,
   RightArrowSvg
@@ -60,7 +59,7 @@ const About = () => {
                 <div className='text-slate-500'>Bachelor of Arts - BA, Computer Science</div>
               </h3>
               <p className={InfoP}>
-                <b>Grade: </b> Sophomore <br />
+                <b>Courses: </b> CS 112, CS 131, CS 132, CS 210, CS 237, CS 320, CS 330, CS 391 A1, CS 411 <br />
               </p>
             </div>
           </div>
