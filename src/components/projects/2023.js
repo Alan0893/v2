@@ -34,7 +34,7 @@ const Projects23 = () => {
 									<span>
 										<img
 											className='mr-2 h-5 w-5 inline'
-											src='/favicons/favicon.ico'
+											src='https://streamsift.netlify.app/favicon.ico'
 											alt='favicon'
 										/>
 										StreamSift
