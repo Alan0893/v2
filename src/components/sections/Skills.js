@@ -105,10 +105,23 @@ const Skills = () => {
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={Chip}>
-                    <img src='https://cdn.discordapp.com/attachments/880994363805696020/1126622621124014080/latex-tutorial-removebg-preview.png' alt='latex' className={ChipImage} />
+                    <img src='https://i.stack.imgur.com/Sx2ec.png' alt='latex' className={ChipImage} />
                     <span className={ChipText}>LaTeX</span>
                   </div>
                 </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg' alt='tailwind' className={ChipImage} />
+                    <span className={ChipText}>Tailwind CSS</span>
+                  </div>
+                </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg' alt='bootstrap' className={ChipImage} />
+                    <span className={ChipText}>Bootstrap</span>
+                  </div>
+                </li>
+
               </ul>
             </div>
           </div>
@@ -129,7 +142,19 @@ const Skills = () => {
                     <span className={ChipText}>NextJS</span>
                   </div>
                 </li>
-                
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://cdn.worldvectorlogo.com/logos/vitejs.svg' alt='vitejs' className={ChipImage} />
+                    <span className={ChipText}>ViteJS</span>
+                  </div>
+                </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg' alt='mongodb' className={ChipImage} />
+                    <span className={ChipText}>MongoDB</span>
+                  </div>
+                </li>
+
               </ul>
             </div>
           </div>
