@@ -72,51 +72,6 @@ const Experience = () => {
           <div className={Container}>
             <div className={DivStyles} />
             <header className={Subhead}>
-              Sept 2022 - Current
-            </header>
-            <div className={Info}>
-              <h3 className={SectionH3}>
-                <div>
-                  <a className={H3Container} href='https://www.starbucks.com/' target='_blank' rel='noreferrer'>
-                    <span className={H3Span} />
-                    <span>
-                      <img
-                        className='mr-2 h-6 w-6 inline'
-                        src='https://upload.wikimedia.org/wikipedia/sco/d/d3/Starbucks_Corporation_Logo_2011.svg'
-                        alt='Starbucks Logo'
-                      />
-                      Starbucks
-                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
-                        <path fillRule='evenodd' d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z' clipRule='evenodd' />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div className='text-slate-500'>Barista</div>
-              </h3>
-              <p className={InfoP}>
-                Handled multiple tasks while ensuring high-quality output. Strong communication skills and willingness
-                to support colleagues. Efficient in multitasking and maintaining a friendly demeanor in a fast-paced environment.
-              </p>
-              <ul className={ChipWrapper}>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Communication</div>
-                </li>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Teamwork</div>
-                </li>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Adaptability</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li className={Spacing}>
-          <div className={Container}>
-            <div className={DivStyles} />
-            <header className={Subhead}>
               July 2019 - Aug 2019
             </header>
             <div className={Info}>
