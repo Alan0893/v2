@@ -44,7 +44,17 @@ const Sophomore = () => {
 							<p className={InfoP}>
 								Introduction to the construction of reliable software. Topics may include software tools, software testing methodologies, retrofitting, regression testing, structured design and structured programming, software characteristics and quality, complexity, entropy, deadlock, fault tolerance, formal proofs of program correctness, chief program teams, and structured walk-throughs. 							
 							</p>
-							
+							<ul className={ChipWrapper}>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>OAuth</div>
+								</li>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>Databases</div>
+								</li>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>Decoupled Architecture</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</li>
@@ -72,7 +82,20 @@ const Sophomore = () => {
 							<p className={InfoP}>
 							Web Application Development is a comprehensive course that equips students with practical skills to build dynamic and immersive web applications. Through hands-on exercises and projects, students learn to structure and style web pages using HTML and CSS, create interactive experiences with JavaScript, develop reusable components with React, interact with relational databases using decoupling tools such as ORM and DAO. Additionally, students explore the exciting world of Web-XR, enabling them to build virtual reality experiences with React-VR. By the end of the course, students have the necessary tools and knowledge to develop robust web applications with seamless integration of databases, interactive functionality, and immersive VR experiences. Students are expected to have basic knowledge of OOP principles, coding conventions, and I/O subsystems. 
 							</p>
-							
+							<ul className={ChipWrapper}>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>ReactJS</div>
+								</li>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>NextJS</div>
+								</li>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>ViteJS</div>
+								</li>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>ThreeJS</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</li>
@@ -100,7 +123,14 @@ const Sophomore = () => {
 							<p className={InfoP}>
 								Examines the basic principles of algorithm design and analysis; graph algorithms; greedy algorithms; dynamic programming; network flows; polynomial- time reductions; NP-hard and NP-complete problems; approximation algorithms; randomized algorithms.
 							</p>
-							
+							<ul className={ChipWrapper}>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>Algorithms</div>
+								</li>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>Dynamic Programming</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</li>
