@@ -59,7 +59,7 @@ const Header = () => {
           CS Student at Boston University
         </h2>
         <p className={HeaderP}>
-          I have a strong passion for software engineering and a strong desire to delve into the technological sector.
+          Constructing ideas into reality, one line at a time.
         </p>
 
         <nav className={Nav}>

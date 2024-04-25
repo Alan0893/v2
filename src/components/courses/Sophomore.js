@@ -93,6 +93,12 @@ const Sophomore = () => {
 									<div className={Chip}>ViteJS</div>
 								</li>
 								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>GraphQL</div>
+								</li>
+								<li className='mr-1.5 mt-2'>
+									<div className={Chip}>Apollo</div>
+								</li>
+								<li className='mr-1.5 mt-2'>
 									<div className={Chip}>ThreeJS</div>
 								</li>
 							</ul>

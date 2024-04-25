@@ -20,14 +20,9 @@ const About = () => {
   return (
 	  <div>
       <p className={Spacing}>
-        I am a motivated individual with a passion for software engineering 
-        and a strong desire to delve into the field of machine learning. Currently, 
-        I am a student at Boston University, pursuing a B.A. in Computer Science as 
-        part of the class of 2026. My insatiable curiosity drives me to constantly 
-        seek out new opportunities for growth within our ever-evolving world. My 
-        primary areas of interest lie in machine learning, artificial intelligence, 
-        and the exciting realm of innovation. As time goes on, my list of interests 
-        continues to expand and evolve.
+        I am currently interested in software engineering, data science, and machine learning. 
+        During my free time, I spend time learning new technologies and frequently working on 
+        new projects or adding onto previous projects.
       </p>
 
       <ol>
@@ -59,7 +54,17 @@ const About = () => {
                 <div className='text-slate-500'>Bachelor of Arts - BA, Computer Science</div>
               </h3>
               <p className={InfoP}>
-                <b>Courses: </b> CS 112, CS 131, CS 132, CS 210, CS 237, CS 320, CS 330, CS 391 A1, CS 411 <br />
+                <b>Courses: </b> 
+                  Data Structures & OOP in Java, 
+                  Discrete Math, 
+                  Linear Algebra, 
+                  Computer Systems, 
+                  Statistics, 
+                  Functional Programming, 
+                  Analysis of Algorithms,
+                  Web Application Development,
+                  Software Engineering
+                <br />
               </p>
             </div>
           </div>
@@ -123,7 +128,7 @@ const About = () => {
                 <b>Diploma: </b> Regents Advanced Designation with Honor, Regents Designation with Mastery in Science, Regents Advanced Designation with Mastery in Math <br />
                 <b>Awards:</b> 
               </p>
-              <ul className='list-disc ml-4'>
+              <ul className='list-disc ml-4 text-sm'>
                 <li>
                   President's Education Award for Excellence Gold Seal
                 </li>
