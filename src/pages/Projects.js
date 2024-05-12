@@ -11,6 +11,7 @@ import {
   LeftArrowSvg
 } from '../styles/styles';
 
+import Projects24 from '../components/projects/2024';
 import Projects23 from '../components/projects/2023';
 import Projects22 from '../components/projects/2022';
 import Projects21 from '../components/projects/2021';
@@ -30,6 +31,12 @@ const Projects = () => {
           </span>
         </Link>
 
+        <section id='2024' className={Section}>
+          <div className={SectionHeading}>
+            <h2 className={SectionH2}>2024</h2>
+          </div>
+          <Projects24 />
+        </section>
 
         <section id='2023' className={Section}>
           <div className={SectionHeading}>
