@@ -13,6 +13,7 @@ import {
 
 import Freshman from '../components/courses/Freshman';
 import Sophomore from '../components/courses/Sophomore';
+import Junior from '../components/courses/Junior';
 
 const Courses = () => {
   return (
@@ -28,6 +29,13 @@ const Courses = () => {
             </span>
           </span>
         </Link>
+
+        <section id='Junior' className={Section}>
+          <div className={SectionHeading}>
+            <h2 className={SectionH2}>Junior (Incoming)</h2>
+          </div>
+          <Junior />
+        </section>
 
         <section id='Sophomore' className={Section}>
           <div className={SectionHeading}>

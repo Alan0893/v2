@@ -60,6 +60,18 @@ const Skills = () => {
                     <span className={ChipText}>Git</span>
                   </div>
                 </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://cdn.worldvectorlogo.com/logos/firebase-1.svg' alt='firebase' className={ChipImage} />
+                    <span className={ChipText}>Firebase</span>
+                  </div>
+                </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png' alt='figma' className={ChipImage} />
+                    <span className={ChipText}>Jupyter Notebook</span>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -82,7 +94,7 @@ const Skills = () => {
                 <li className='mr-1.5 mt-1'>
                   <div className={Chip}>
                     <img src='https://www.svgrepo.com/show/353478/bash-icon.svg' alt='bash' className={ChipImage} />
-                    <span className={ChipText}>Bash</span>
+                    <span className={ChipText}>Bash/Shell</span>
                   </div>
                 </li>
                 <li className='mr-1.5 mt-1'>
@@ -93,19 +105,7 @@ const Skills = () => {
                 </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={Chip}>
-                    <img src='https://cdn.worldvectorlogo.com/logos/firebase-1.svg' alt='firebase' className={ChipImage} />
-                    <span className={ChipText}>Firebase</span>
-                  </div>
-                </li>
-                <li className='mr-1.5 mt-1'>
-                  <div className={Chip}>
-                    <img src='https://cdn.worldvectorlogo.com/logos/arduino-1.svg' alt='arduino' className={ChipImage} />
-                    <span className={ChipText}>Arduino</span>
-                  </div>
-                </li>
-                <li className='mr-1.5 mt-1'>
-                  <div className={Chip}>
-                    <img src='https://i.stack.imgur.com/Sx2ec.png' alt='latex' className={ChipImage} />
+                    <img src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png' alt='latex' className={ChipImage} />
                     <span className={ChipText}>LaTeX</span>
                   </div>
                 </li>
@@ -121,7 +121,30 @@ const Skills = () => {
                     <span className={ChipText}>Bootstrap</span>
                   </div>
                 </li>
-
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://cdn.worldvectorlogo.com/logos/vitejs.svg' alt='vitejs' className={ChipImage} />
+                    <span className={ChipText}>ViteJS</span>
+                  </div>
+                </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg' alt='nodejs' className={ChipImage} />
+                    <span className={ChipText}>NodeJS</span>
+                  </div>
+                </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://www.svgrepo.com/show/373945/ocaml.svg' alt='nodejs' className={ChipImage} />
+                    <span className={ChipText}>OCaml</span>
+                  </div>
+                </li>
+                <li className='mr-1.5 mt-1'>
+                  <div className={Chip}>
+                    <img src='https://www.svgrepo.com/show/354113/nextjs-icon.svg' alt='nextjs' className={ChipImage} />
+                    <span className={ChipText}>NextJS</span>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -136,18 +159,6 @@ const Skills = () => {
             <div className={Info}>
               <ul className={ChipWrapper}>
                 
-                <li className='mr-1.5 mt-1'>
-                  <div className={Chip}>
-                    <img src='https://www.svgrepo.com/show/354113/nextjs-icon.svg' alt='nextjs' className={ChipImage} />
-                    <span className={ChipText}>NextJS</span>
-                  </div>
-                </li>
-                <li className='mr-1.5 mt-1'>
-                  <div className={Chip}>
-                    <img src='https://cdn.worldvectorlogo.com/logos/vitejs.svg' alt='vitejs' className={ChipImage} />
-                    <span className={ChipText}>ViteJS</span>
-                  </div>
-                </li>
                 <li className='mr-1.5 mt-1'>
                   <div className={Chip}>
                     <img src='https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg' alt='mongodb' className={ChipImage} />

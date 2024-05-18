@@ -55,15 +55,15 @@ const About = () => {
               </h3>
               <p className={InfoP}>
                 <b>Courses: </b> 
-                  Data Structures & OOP in Java, 
-                  Discrete Math, 
-                  Linear Algebra, 
-                  Computer Systems, 
-                  Statistics, 
-                  Functional Programming, 
-                  Analysis of Algorithms,
+                  Software Engineering,
                   Web Application Development,
-                  Software Engineering
+                  Analysis of Algorithms,
+                  Functional Programming,
+                  Statistics,
+                  Computer Systems,
+                  Linear Algebra,
+                  Discrete Math,
+                  Data Structures & OOP in Java
                 <br />
               </p>
             </div>
@@ -123,7 +123,7 @@ const About = () => {
                 <div className='text-slate-500'>High School Diploma, Carl Sagan Honors Program (STEM)</div>
               </h3>
               <p className={InfoP}>
-                <b>GPA: </b> 102.95 <br />
+                <b>GPA:</b> 102.95 | <b>Rank:</b> 7/960 <br />
                 <b>Activities: </b> Cross Country Team, Indoor Track & Field Team <br />
                 <b>Diploma: </b> Regents Advanced Designation with Honor, Regents Designation with Mastery in Science, Regents Advanced Designation with Mastery in Math <br />
                 <b>Awards:</b> 
