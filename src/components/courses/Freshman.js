@@ -6,13 +6,11 @@ import {
 	H3Span,
 	LinkSvg,
 	InfoP,
-	Image,
 	ChipWrapper,
 	Chip,
 	ProjContainer,
 	ProjWrapper,
 	ProjDiv,
-	Links,
 	Time
 } from '../../styles/styles';
 
