@@ -93,7 +93,7 @@ const Projects23 = () => {
 						</div>
 						<div className={Info}>
 							<h3>
-								<a className={H3Container} href='https://github.com/Alan0893/Sprofile' target='_blank' rel='noreferrer'>
+								<a className={H3Container} href='https://sprofile.onrender.com/' target='_blank' rel='noreferrer'>
 									<span className={H3Span} />
 									<span>
 										<img
