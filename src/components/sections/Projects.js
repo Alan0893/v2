@@ -115,9 +115,6 @@ const Projects = () => {
 								<li className='mr-1.5 mt-2'>
 									<div className={Chip}>Material UI</div>
 								</li>
-								<li className='mr-1.5 mt-2'>
-									<div className={Chip}>Google Cloud</div>
-								</li>
 							</ul>
 						</div>
 						<img 
