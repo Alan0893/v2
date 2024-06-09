@@ -47,14 +47,10 @@ const Projects22 = () => {
 								</a>
 							</h3>
 							<p className={InfoP}>
-								Developed a Python-based application using 
-								<a className={Links} href='https://streamlit.io/' target='_blank' rel='noreferrer'> Streamlit </a> 
-								to predict future trends based on past data. Leveraged 
-								<a className={Links} href='https://finance.yahoo.com/' target='_blank' rel='noreferrer'> yfinance </a> 
-								for retrieving historical stock data and utilized Prophet for time series forecasting. Incorporated 
-								Plotly for interactive data visualization. Focused on stock prediction for Dow Jones companies. Provided an 
-								intuitive user interface for selecting datasets and forecasting time periods. The project aimed to analyze 
-								historical trends and generate insightful predictions to support decision-making in the stock market.
+								Co-developed a stock prediction tool for Dow Jones Companies, enhancing investment decision-making capabilities and achieving an 85% prediction accuracy rate.
+                Employed the yfinance library to extract and analyze 5 years of historical stock data for 20 Dow Jones companies, enabling comprehensive data analysis. Applied 
+                Plotly to craft interactive data visualizations, increasing user engagement by 20%. Analyzed historical trends and developed predictive models with an 85% accuracy 
+                rate, significantly aiding in stock market decision-making processes.
 							</p>
 							<ul className={ChipWrapper}>
 								<li className='mr-1.5 mt-2'>

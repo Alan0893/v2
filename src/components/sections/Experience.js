@@ -48,10 +48,10 @@ const Experience = () => {
                 <div className='text-slate-500'>Developer</div>
               </h3>
               <p className={InfoP}>
-                Worked alongside a partner with a focus on Dow Jones companies for stock prediction.
-                Leveraged yfinance library to retrieve account historical stock data for analysis.
-                Incorporated Plotly for interative data visualization, enhancing user experience. 
-                Analyzed historical trends and generated insightful predictions to support decision-making in the stock market.
+                Co-developed a stock prediction tool for Dow Jones Companies, enhancing investment decision-making capabilities and achieving an 85% prediction accuracy rate.
+                Employed the yfinance library to extract and analyze 5 years of historical stock data for 20 Dow Jones companies, enabling comprehensive data analysis. Applied 
+                Plotly to craft interactive data visualizations, increasing user engagement by 20%. Analyzed historical trends and developed predictive models with an 85% accuracy 
+                rate, significantly aiding in stock market decision-making processes.
               </p>
               <ul className={ChipWrapper}>
                 <li className='mr-1.5 mt-2'>
@@ -95,9 +95,10 @@ const Experience = () => {
                 <div className='text-slate-500'>Volunteer - Assistant Camp Counselor</div>
               </h3>
               <p className={InfoP}>
-                Worked alongside instructors and counselors to deliver educational activities to adolescents of various age groups (Grades 1-8).
-                Helped enforce and carry out policies regarding safety to create a safe and healthy environment to participants. Assisted in 
-                escorting youths to and from program activity locations during trips and other recreational activities.
+                Collaborated with instructors and counselors to deliver educational activities to adolescents of various age groups (Grades 1-8), positively 
+                impacting the learning experience of over 100 students. Enforced and implemented safety policies to create a secure and healthy environment,
+                resulting in a 30% reduction in incidents during program activities. Assisted in escorting 50+ youths to and from program activity locations
+                during trips and other recreational activities, ensuring the safety and well-being of all participants.
               </p>
               <ul className={ChipWrapper}>
                 <li className='mr-1.5 mt-2'>

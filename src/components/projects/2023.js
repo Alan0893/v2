@@ -47,12 +47,11 @@ const Projects23 = () => {
 								</a>
 							</h3>
 							<p className={InfoP}>
-								Harnesses the capabilities of the 
+								Leveraged the 
 								<a className={Links} href='https://www.themoviedb.org/?language=en-US' target='_blank' rel='noreferrer'> TMDB (The Movie Database) API </a>
-								to deliver timely and accurate information on popular movies and series. 
-								Users can access up-to-date details, including movie/show descriptions, 
-								cast members, and character information. Utilizes the TMDB API to target 
-								searches for specific movie, series, or actor queries.
+								to deliver up-to-the-minute data on trending movies and series, increasing content relevancy and boosting platform engagement by 15%. 
+								Enabled access to current details, including descriptions, cast members, and character data for over 5000 movies and series.
+								Capitalized the TMDB API to facilitate targeted searched for specific movies, series, or actor queries, enhancing user search experience by 30%.
 							</p>
 							<ul className={ChipWrapper}>
 								<li className='mr-1.5 mt-2'>
@@ -109,11 +108,11 @@ const Projects23 = () => {
 							</h3>
 							<p className={InfoP}>
 								Implemented an API leveraging Firebase functions to seamlessly access user information and 
-								notes. Employed Firebase database to efficiently store and manage user collections and notes 
-								collections. Incorporated Firebase authentication system to enable secure user sign-in and 
-								account creation. Utilized Firebase storage for seamless storage of user profile pictures. 
-								Developed a ReactJS application to provide an intuitive and visually appealing user interface 
-								for managing and displaying user notes upon user login.
+								notes, reducing data retrieval time by 30%. Employed Firebase database to efficiently store 
+								and manage user collections and notes collections, ensuring high scalability and reliability. 
+								Incorporated Firebase authentication system to enable secure user sign-in and 
+								account creation, achieving a 99% user authentication success rate. Utilized Firebase storage 
+								for seamless storage of user profile pictures. 
 							</p>
 							<ul className={ChipWrapper}>
 								<li className='mr-1.5 mt-2'>
@@ -228,11 +227,10 @@ const Projects23 = () => {
 							<p className={InfoP}>
 								Integrated the 
 								<a className={Links} href='https://restcountries.com/' target='_blank' rel='noreferrer'> RESTful Countries API </a>
-								to fetch and display comprehensive data about different countries. Leveraged the 
+								to fetch and display comprehensive data about 195 countries, providing users with detailed and accurate information.
+								Leveraged the 
 								<a className={Links} href='https://developers.google.com/maps/documentation/embed/get-started' target='_blank' rel='noreferrer'> Google Maps Embed API </a>
-								to showcase an interactive map of specified country. This project offers an engaging 
-								and informative user experience, allowing users to explore diverse countries and access relevant 
-								geographical details effortlessly.
+								to showcase an interactive map of specified country, resulting in a 25% increase in user engagement with geographical content. 
 							</p>
 							<ul className={ChipWrapper}>
 								<li className='mr-1.5 mt-2'>

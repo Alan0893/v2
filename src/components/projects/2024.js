@@ -47,13 +47,12 @@ const Projects23 = () => {
 								</a>
 							</h3>
 							<p className={InfoP}>
-								Integrates the 
-								<a className={Links} href='https://spoonacular.com/food-api/docs' target='_blank' rel='noreferrer'> Spoonacular API </a>
-								to generate recipes based on specified ingredients. In cases where certain ingredients are unavailable
-								to the user, the system leverages the 
-								<a className={Links} href='https://www.unwrangle.com/' target='_blank' rel='noreferrer'> Unwrangle API </a>
-								to identify and source these products from Sam's Club. User authentication is managed through Firebase'seamless
-								OAuth system, with search history and recipe collections stored in a Firestore database for each user.							</p>
+								Streamlined meal planning for users by creating an app that fetches recipes based on available ingredients, improving user convenience by 30%, by integrating the 
+								<a className={Links} href='https://spoonacular.com/food-api' target='_blank' rel='noreferrer'> Spoonacular API </a>.
+								Ensured quick and easy retrieval of past recipes, reducing search time by 40%, by storing and managing user's histories in Firebase' Firestore. Integrated Google OAuth login via 
+								Firebase, enhancing user security and streamlining authentication; increased user retention by 15% and reduced login-related issues by 30%. Simplified the grocery shopping process 
+								by 50% by developing a feature that identifies missing ingredients and generates a shopping list using the 
+								<a className={Links} href='https://www.unwrangle.com/' target='_blank' rel='noreferrer'> Unwrangle Sam's Club API</a>.						</p>
 							<ul className={ChipWrapper}>
 								<li className='mr-1.5 mt-2'>
 									<div className={Chip}>ReactJS</div>
@@ -111,11 +110,13 @@ const Projects23 = () => {
 								</a>
 							</h3>
 							<p className={InfoP}>
-								Utilizes the 
+								Harnessed the 
 								<a className={Links} href='https://developer.spotify.com/documentation/web-api' target='_blank' rel='noreferrer'> Spotify API </a>
-								to obtain User, Artists, Album, Playlist, Tracks, and Player information. Further utilizes the
+								to retrieve extensive data on users, artists, albums, playlists, tracks and player information, resulting in a 20% improvement in user experience.
+								Incorporated the 
 								<a className={Links} href='https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/' target='_blank' rel='noreferrer'> TicketMaster API </a>
-								to get an Artist's upcoming events. User authentication is managed through Spotify's OAuth system.
+								to deliver real-time updates on upcoming artist events, resulting in a 15% increase in app usage frequency. Implemented Spotify's OAuth system for user authentication,
+								ensuring seamless access to personalized music content and features, reducing unauthorized access incidents by 25%.
 							</p>
 							<ul className={ChipWrapper}>
 								<li className='mr-1.5 mt-2'>

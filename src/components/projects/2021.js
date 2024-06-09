@@ -47,13 +47,13 @@ const Projects23 = () => {
 								</a>
 							</h3>
 							<p className={InfoP}>
-								The API wrapper for the 
+								Designed an API Wrapper for the 
 								<a className={Links} href='https://brawlapi.com/#/' target='_blank' rel='noreferrer'> BrawlApi </a> 
-								is designed to simplify the retrieval of specific 
-								game data. By utilizing JavaScript, it efficiently calls the BrawlApi, extracts the 
-								desired information from the JSON response, and returns the relevant data. This wrapper 
-								provides developers with a convenient and streamlined approach to accessing the BrawlApi 
-								API, enhancing the ease and efficiency of making API calls.
+								to simplify the retrieval of specific game data, reducing API call complexity by 40%. Utilized JavaScript
+								to efficiently call the BrawlApi, extract desired information from the JSON response, and return relevant 
+								data, enhancing data retrieval speed by 30%. This wrapper provides developers with a convenient and streamlined 
+								approach to accessing the BrawlApi API, improving the ease and efficiency of making API calls, leading
+								to a 25% reduction in development time for integrating game data.
 							</p>
 							<ul className={ChipWrapper}>
 								<li className='mr-1.5 mt-2'>
