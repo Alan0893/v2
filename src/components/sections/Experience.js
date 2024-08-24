@@ -21,6 +21,57 @@ const Experience = () => {
   return (
 	  <div>
       <ol>
+
+      <li className={Spacing}>
+          <div className={Container}>
+            <div className={`border border-sky-900 ${DivStyles}`} />
+            <header className={Subhead}>
+              Jan 2024 - May 2024
+            </header>
+            <div className={Info}>
+              <h3 className={SectionH3}>
+                <div>
+                  <a className={H3Container} href='https://github.com/Alan0893/Recipe' target='_blank' rel='noreferrer'>
+                    <span className={H3Span} />
+                    <span>
+                      <img
+                        className='mr-2 h-6 w-6 inline'
+                        src='https://upload.wikimedia.org/wikipedia/commons/f/f5/Boston_University_seal.svg'
+                        alt='Recipe Icon'
+                      />
+                      Boston University - CS 411
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
+                        <path fillRule='evenodd' d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z' clipRule='evenodd' />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div className='text-slate-500'>Software Engineer - Full-Stack Developer</div>
+              </h3>
+              <p className={InfoP}>
+                Streamlined meal planning for users by creating an app that fetches recipes based on available ingredients, improving user convenience by 30%, by integrating the Spoonacular API . Ensured quick and easy 
+                retrieval of past recipes, reducing search time by 40%, by storing and managing user's histories in Firebase' Firestore. Integrated Google OAuth login via Firebase, enhancing user security and streamlining 
+                authentication; increased user retention by 15% and reduced login-related issues by 30%. Simplified the grocery shopping process by 50% by developing a feature that identifies missing ingredients and generates 
+                a shopping list using the Unwrangle Sam's Club API.
+              </p>
+              <ul className={ChipWrapper}>
+                <li className='mr-1.5 mt-2'>
+                  <div className={Chip}>Teamwork</div>
+                </li>
+                <li className='mr-1.5 mt-2'>
+                  <div className={Chip}>ReactJS</div>
+                </li>
+                <li className='mr-1.5 mt-2'>
+                  <div className={Chip}>ExpressJS</div>
+                </li>
+                <li className='mr-1.5 mt-2'>
+                  <div className={Chip}>Firebase</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
         <li className={Spacing}>
           <div className={Container}>
             <div className={`border border-sky-900 ${DivStyles}`} />
@@ -62,53 +113,6 @@ const Experience = () => {
                 </li>
                 <li className='mr-1.5 mt-2'>
                   <div className={Chip}>Python</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li className={Spacing}>
-          <div className={Container}>
-            <div className={DivStyles} />
-            <header className={Subhead}>
-              July 2019 - Aug 2019
-            </header>
-            <div className={Info}>
-              <h3 className={SectionH3}>
-                <div>
-                  <a className={H3Container} href='https://www.scsny.org/home' target='_blank' rel='noreferrer'>
-                    <span className={H3Span} />
-                    <span>
-                      <img
-                        className='mr-2 h-6 w-6 inline'
-                        src='https://www.scsny.org/app/themes/sunnyside/assets/images/logo.png'
-                        alt='SunnySide Logo'
-                      />
-                      SunnySide Community Service
-                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className={LinkSvg}>
-                        <path fillRule='evenodd' d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z' clipRule='evenodd' /> 
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div className='text-slate-500'>Volunteer - Assistant Camp Counselor</div>
-              </h3>
-              <p className={InfoP}>
-                Collaborated with instructors and counselors to deliver educational activities to adolescents of various age groups (Grades 1-8), positively 
-                impacting the learning experience of over 100 students. Enforced and implemented safety policies to create a secure and healthy environment,
-                resulting in a 30% reduction in incidents during program activities. Assisted in escorting 50+ youths to and from program activity locations
-                during trips and other recreational activities, ensuring the safety and well-being of all participants.
-              </p>
-              <ul className={ChipWrapper}>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Creativity</div>
-                </li>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Communication</div>
-                </li>
-                <li className='mr-1.5 mt-2'>
-                  <div className={Chip}>Leadership</div>
                 </li>
               </ul>
             </div>

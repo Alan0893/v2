@@ -50,7 +50,6 @@ const Projects23 = () => {
 								Designed and documented 15+ evaluation rules for function application, sequence expressions, conditional expressions, and trace expressions.
 								Compiled high-level constructs into stack commands, maintaining execution invariants across all test cases and optimizing sequences (Push, Trace, Pop, Swap) for efficiency.
 								Validated the language's behavior through the design and interpretation of sample programs, ensuring expected trace outputs and correct handling of edge cases.
-								Capitalized the TMDB API to facilitate targeted searched for specific movies, series, or actor queries, enhancing user search experience by 30%.
 							</p>
 							<ul className={ChipWrapper}>
 								<li className='mr-1.5 mt-2'>
